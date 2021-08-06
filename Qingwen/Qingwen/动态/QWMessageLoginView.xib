@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="tZp-ip-5ga" customClass="QWMessageLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vkw-Wb-XyW">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-bb-YNC">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="kJk-Rj-uA3"/>
+                                <constraint firstAttribute="width" constant="130" id="yQM-Ms-q38"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="点击登录" backgroundImage="btn_bg_7">
+                                <color key="titleColor" red="0.31372549019607843" green="0.31372549019607843" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedLoginBtn:" destination="tZp-ip-5ga" eventType="touchUpInside" id="OAD-ko-Kpz"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message_login_image" translatesAutoresizingMaskIntoConstraints="NO" id="mDe-n7-sR4">
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="mDe-n7-sR4" secondAttribute="height" multiplier="200:197" id="8gM-1g-hac"/>
+                                <constraint firstAttribute="width" constant="150" id="yP5-ND-7ic"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" verticalCompressionResistancePriority="740" text="登录发现精彩世界(＞ε ＜)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDI-Mf-jhv">
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="EDI-Mf-jhv" secondAttribute="trailing" id="6fH-XT-vX6"/>
+                        <constraint firstItem="EDI-Mf-jhv" firstAttribute="leading" secondItem="vkw-Wb-XyW" secondAttribute="leading" id="BO1-hn-12I"/>
+                        <constraint firstAttribute="bottom" secondItem="FOp-bb-YNC" secondAttribute="bottom" id="D3c-eO-XcN"/>
+                        <constraint firstItem="FOp-bb-YNC" firstAttribute="top" secondItem="EDI-Mf-jhv" secondAttribute="bottom" constant="20" id="JGM-ob-byw"/>
+                        <constraint firstItem="mDe-n7-sR4" firstAttribute="centerX" secondItem="vkw-Wb-XyW" secondAttribute="centerX" id="TNh-Gg-zqo"/>
+                        <constraint firstItem="mDe-n7-sR4" firstAttribute="top" secondItem="vkw-Wb-XyW" secondAttribute="top" id="dhI-YR-sRS"/>
+                        <constraint firstItem="EDI-Mf-jhv" firstAttribute="top" secondItem="mDe-n7-sR4" secondAttribute="bottom" constant="30" id="kFk-eY-Guf"/>
+                        <constraint firstItem="FOp-bb-YNC" firstAttribute="centerX" secondItem="vkw-Wb-XyW" secondAttribute="centerX" id="yra-2b-fhl"/>
+                        <constraint firstItem="EDI-Mf-jhv" firstAttribute="centerX" secondItem="vkw-Wb-XyW" secondAttribute="centerX" id="zU4-CL-THl"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vkw-Wb-XyW" firstAttribute="centerX" secondItem="tZp-ip-5ga" secondAttribute="centerX" id="6GY-16-d2j"/>
+                <constraint firstItem="vkw-Wb-XyW" firstAttribute="centerY" secondItem="tZp-ip-5ga" secondAttribute="centerY" id="cqG-IP-Gld"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <connections>
+                <outlet property="loginBtn" destination="FOp-bb-YNC" id="Ix6-7Y-CUe"/>
+            </connections>
+            <point key="canvasLocation" x="840" y="321.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_bg_7" width="13" height="13"/>
+        <image name="message_login_image" width="200" height="197"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

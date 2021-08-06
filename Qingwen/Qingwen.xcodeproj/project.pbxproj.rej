@@ -1,0 +1,18 @@
+diff a/Qingwen.xcodeproj/project.pbxproj b/Qingwen.xcodeproj/project.pbxproj	(rejected hunks)
+@@ -426,6 +426,7 @@
+ 		3DFDB73B1B462709005FAF39 /* UINib+create.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDB73A1B462709005FAF39 /* UINib+create.m */; };
+ 		3DFDBC791B8F0EF80057C2D6 /* QWMessageLoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3DFDBC781B8F0EF80057C2D6 /* QWMessageLoginView.xib */; };
+ 		3DFDBC7C1B8F0F020057C2D6 /* QWMessageLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DFDBC7B1B8F0F020057C2D6 /* QWMessageLoginView.m */; };
++		8EE300C21D0CFFB600DCF9C2 /* NSString+url.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE300C11D0CFFB600DCF9C2 /* NSString+url.m */; };
+ 		ADFFCB5A987E71EE255FCB28 /* libPods-Qingwen.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2F89481C3A0D8CF4BE7D348 /* libPods-Qingwen.a */; };
+ /* End PBXBuildFile section */
+ 
+@@ -1109,6 +1110,8 @@
+ 		3DFDBC7A1B8F0F020057C2D6 /* QWMessageLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QWMessageLoginView.h; sourceTree = "<group>"; };
+ 		3DFDBC7B1B8F0F020057C2D6 /* QWMessageLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QWMessageLoginView.m; sourceTree = "<group>"; };
+ 		4A7E12ECDF8F2FDBA0860B7F /* Pods-Qingwen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qingwen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Qingwen/Pods-Qingwen.debug.xcconfig"; sourceTree = "<group>"; };
++		8EE300C01D0CFFB600DCF9C2 /* NSString+url.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+url.h"; sourceTree = "<group>"; };
++		8EE300C11D0CFFB600DCF9C2 /* NSString+url.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+url.m"; sourceTree = "<group>"; };
+ 		A7B796FF617E42182E965578 /* Pods-Qingwen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Qingwen.release.xcconfig"; path = "Pods/Target Support Files/Pods-Qingwen/Pods-Qingwen.release.xcconfig"; sourceTree = "<group>"; };
+ 		F2F89481C3A0D8CF4BE7D348 /* libPods-Qingwen.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Qingwen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+ /* End PBXFileReference section */

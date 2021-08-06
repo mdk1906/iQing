@@ -1,0 +1,35 @@
+diff a/Qingwen/我的/我的消息/QWMyMessagePageVC.swift b/Qingwen/我的/我的消息/QWMyMessagePageVC.swift	(rejected hunks)
+@@ -8,6 +8,16 @@
+ 
+ import UIKit
+ 
++extension QWMyMessagePageVC {
++    override class func registMapping() {
++        let vo = QWMappingVO()
++        vo.className = NSStringFromClass(self)
++        vo.storyboardName = "QWMyMessage"
++        QWRouter.sharedInstance().registerRouterVO(vo, withKey: "myMessage")
++    }
++}
++
++
+ class QWMyMessagePageVC: QWBasePageVC {
+ 
+     lazy var leftVC: QWMyMessageVC = {
+@@ -36,6 +46,16 @@ class QWMyMessagePageVC: QWBasePageVC {
+         let officialCount = QWGlobalValue.sharedInstance().officialCount ?? 0
+         let oldOfficialCount = QWGlobalValue.sharedInstance().oldOfficialCount ?? 0
+         self.tipView.hidden = officialCount.integerValue <= oldOfficialCount.integerValue
++        
++        if let extraData = self.extraData {
++            if (extraData.objectForCaseInsensitiveKey("page") as? NSNumber) != nil{
++                
++                let popTime = dispatch_time(DISPATCH_TIME_NOW, (Int64)(0.5 * Double(NSEC_PER_SEC)))
++                dispatch_after(popTime, dispatch_get_main_queue()) {
++                    self.onPressedTitleBtn(self.titleBtns[1])
++                }
++            }
++        }
+     }
+ 
+     override func didSelectedIndex(index: Int) {

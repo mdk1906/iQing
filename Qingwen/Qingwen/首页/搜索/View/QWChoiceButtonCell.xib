@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8Je-GA-XO1" customClass="QWChoiceButtonCell" customModule="Qingwen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="136" height="95"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="136" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzD-jS-dzx">
+                        <rect key="frame" x="48.5" y="33.5" width="39" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <inset key="contentEdgeInsets" minX="5" minY="5" maxX="5" maxY="5"/>
+                        <state key="normal" title="全部">
+                            <color key="titleColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <state key="selected" backgroundImage="btn_bg_2">
+                            <color key="titleColor" red="0.97247451539999996" green="0.97259098290000001" blue="0.97243505720000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="QzD-jS-dzx" firstAttribute="centerX" secondItem="8Je-GA-XO1" secondAttribute="centerX" id="pdn-bg-31E"/>
+                <constraint firstItem="QzD-jS-dzx" firstAttribute="centerY" secondItem="8Je-GA-XO1" secondAttribute="centerY" id="zYL-Ow-392"/>
+            </constraints>
+            <size key="customSize" width="136" height="95"/>
+            <connections>
+                <outlet property="choiceBtn" destination="QzD-jS-dzx" id="EdR-dT-Ozt"/>
+            </connections>
+            <point key="canvasLocation" x="-245" y="-225.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="btn_bg_2" width="13" height="13"/>
+    </resources>
+</document>

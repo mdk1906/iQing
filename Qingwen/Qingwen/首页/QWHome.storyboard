@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="64S-Vi-E7A">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="cVy-0Q-DPN">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="esu-6M-tNs" customClass="QWHomeVC" customModule="Qingwen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZiU-h5-mDg"/>
+                        <viewControllerLayoutGuide type="bottom" id="qiO-K4-BKi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xPj-2w-Bed">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="onQ-ut-6o6">
+                        <barButtonItem key="rightBarButtonItem" image="best_search" id="JWX-VY-r4T">
+                            <connections>
+                                <action selector="onPressedSearchBtn:" destination="esu-6M-tNs" id="tgn-Cy-DGJ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZK1-vI-xHb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="7f3-nD-Dmr">
+                    <rect key="frame" x="0.0" y="0.0" width="200" height="45"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Er-Jp-Z2q">
+                            <rect key="frame" x="120" y="0.0" width="80" height="45"/>
+                            <state key="normal" title="热门">
+                                <color key="titleColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_bg_4">
+                                <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_bg_4">
+                                <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps4-Mg-iXo">
+                            <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                            <state key="normal" title="推荐">
+                                <color key="titleColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="btn_bg_4">
+                                <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="highlighted" backgroundImage="btn_bg_4">
+                                <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ps4-Mg-iXo" firstAttribute="leading" secondItem="7f3-nD-Dmr" secondAttribute="leading" id="A7o-mV-bXI"/>
+                        <constraint firstAttribute="bottom" secondItem="Ps4-Mg-iXo" secondAttribute="bottom" id="AD9-my-awE"/>
+                        <constraint firstItem="Ps4-Mg-iXo" firstAttribute="top" secondItem="7f3-nD-Dmr" secondAttribute="top" id="Box-mP-sT7"/>
+                        <constraint firstItem="1Er-Jp-Z2q" firstAttribute="height" secondItem="Ps4-Mg-iXo" secondAttribute="height" id="J62-of-v1K"/>
+                        <constraint firstItem="1Er-Jp-Z2q" firstAttribute="top" secondItem="7f3-nD-Dmr" secondAttribute="top" id="Tuk-T5-QeD"/>
+                        <constraint firstAttribute="trailing" secondItem="1Er-Jp-Z2q" secondAttribute="trailing" id="cbK-dp-9Ia"/>
+                        <constraint firstItem="1Er-Jp-Z2q" firstAttribute="leading" secondItem="Ps4-Mg-iXo" secondAttribute="trailing" constant="40" id="dgs-TS-hy0"/>
+                        <constraint firstItem="1Er-Jp-Z2q" firstAttribute="width" secondItem="Ps4-Mg-iXo" secondAttribute="width" id="f50-k6-h5Q"/>
+                        <constraint firstAttribute="bottom" secondItem="1Er-Jp-Z2q" secondAttribute="bottom" id="ojV-Yj-lqz"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="379" y="417"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="xPN-cC-guI">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="64S-Vi-E7A" customClass="QWBaseNC" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabitem2" id="vKN-as-GPr"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x03-1o-6V9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="esu-6M-tNs" kind="relationship" relationship="rootViewController" id="bbv-Az-RaN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RBr-bz-iA9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-120" y="417"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="best_search" width="19" height="19"/>
+        <image name="btn_bg_4" width="5" height="10"/>
+        <image name="tabitem2" width="23" height="23"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

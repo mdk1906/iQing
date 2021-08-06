@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BtZ-Oa-uC9" customClass="QWReadingSettingView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9I-F5-RSU">
+                    <rect key="frame" x="0.0" y="10" width="320" height="53"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ecp-9l-9xr">
+                            <rect key="frame" x="69" y="10" width="105.5" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="小" backgroundImage="reading_btn_bg_normal">
+                                <color key="titleColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedSmallerFontBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="Gn5-JW-Ycd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akW-qg-PAF">
+                            <rect key="frame" x="195" y="10.5" width="105" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="大" backgroundImage="reading_btn_bg_normal">
+                                <color key="titleColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedBiggerFontBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="BPB-8J-YYO"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdD-kg-waO">
+                            <rect key="frame" x="20" y="18.5" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="Ecp-9l-9xr" secondAttribute="centerY" id="BDT-XL-LvZ"/>
+                        <constraint firstAttribute="centerY" secondItem="akW-qg-PAF" secondAttribute="centerY" id="BYh-qI-zfy"/>
+                        <constraint firstItem="Ecp-9l-9xr" firstAttribute="width" secondItem="akW-qg-PAF" secondAttribute="width" id="C5M-Db-4NY"/>
+                        <constraint firstItem="akW-qg-PAF" firstAttribute="leading" secondItem="Ecp-9l-9xr" secondAttribute="trailing" constant="20" id="RTD-6L-ha8"/>
+                        <constraint firstAttribute="trailing" secondItem="akW-qg-PAF" secondAttribute="trailing" constant="20" id="YOk-NS-dwE"/>
+                        <constraint firstAttribute="centerY" secondItem="TdD-kg-waO" secondAttribute="centerY" id="esl-oc-dae"/>
+                        <constraint firstItem="TdD-kg-waO" firstAttribute="leading" secondItem="q9I-F5-RSU" secondAttribute="leading" constant="20" id="fJe-eA-W4s"/>
+                        <constraint firstItem="Ecp-9l-9xr" firstAttribute="leading" secondItem="TdD-kg-waO" secondAttribute="trailing" constant="20" id="t5g-W1-SPc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOH-eF-neZ">
+                    <rect key="frame" x="0.0" y="63" width="320" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="字体" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UJ-uh-aHI">
+                            <rect key="frame" x="20" y="18.5" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oht-cZ-j4r">
+                            <rect key="frame" x="152.5" y="10" width="64" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="简体" backgroundImage="reading_btn_bg_normal">
+                                <color key="titleColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedSimplifiedBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="ZsH-ff-38o"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0f-ki-2l8">
+                            <rect key="frame" x="236" y="10" width="63.5" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="繁体" backgroundImage="reading_btn_bg_normal">
+                                <color key="titleColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedTraditionalBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="Inm-lW-48K"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6MP-rl-36v" userLabel="Origin Btn">
+                            <rect key="frame" x="69" y="10" width="63.5" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <state key="normal" title="原文" backgroundImage="reading_btn_bg_normal">
+                                <color key="titleColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedOriginalFontBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="LrF-PS-ftj"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6MP-rl-36v" firstAttribute="centerY" secondItem="aOH-eF-neZ" secondAttribute="centerY" id="6Cy-pG-0c8"/>
+                        <constraint firstItem="6MP-rl-36v" firstAttribute="leading" secondItem="2UJ-uh-aHI" secondAttribute="trailing" constant="20" id="8f6-ws-oYc"/>
+                        <constraint firstItem="y0f-ki-2l8" firstAttribute="leading" secondItem="oht-cZ-j4r" secondAttribute="trailing" constant="20" id="BcD-Pu-zpe"/>
+                        <constraint firstAttribute="centerY" secondItem="oht-cZ-j4r" secondAttribute="centerY" id="Fqj-k8-Ky9"/>
+                        <constraint firstAttribute="trailing" secondItem="y0f-ki-2l8" secondAttribute="trailing" constant="20" id="HJ6-A6-PBo"/>
+                        <constraint firstAttribute="centerY" secondItem="2UJ-uh-aHI" secondAttribute="centerY" id="QKb-ea-xZq"/>
+                        <constraint firstAttribute="centerY" secondItem="y0f-ki-2l8" secondAttribute="centerY" id="dmO-tP-LyD"/>
+                        <constraint firstItem="oht-cZ-j4r" firstAttribute="leading" secondItem="6MP-rl-36v" secondAttribute="trailing" constant="20" id="g4a-mJ-BMX"/>
+                        <constraint firstItem="2UJ-uh-aHI" firstAttribute="leading" secondItem="aOH-eF-neZ" secondAttribute="leading" constant="20" id="o3h-iT-fQC"/>
+                        <constraint firstItem="y0f-ki-2l8" firstAttribute="width" secondItem="oht-cZ-j4r" secondAttribute="width" id="pIE-EL-zf9"/>
+                        <constraint firstItem="6MP-rl-36v" firstAttribute="width" secondItem="oht-cZ-j4r" secondAttribute="width" id="uTf-lN-MPi"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Avt-iG-3ao">
+                    <rect key="frame" x="0.0" y="116" width="320" height="53"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="760" text="主题" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zyd-6K-54v">
+                            <rect key="frame" x="20" y="18" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y0y-Ba-uId">
+                            <rect key="frame" x="69" y="10" width="231" height="33"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bft-bv-pOZ">
+                                    <rect key="frame" x="13" y="-0.5" width="33" height="33"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" backgroundImage="reading_btn_change_bg_4_normal">
+                                        <color key="titleColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="reading_btn_change_bg_4_pressed"/>
+                                    <connections>
+                                        <action selector="onPressedChangeBGBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="4WV-u9-Dj1"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VgU-Es-vlK">
+                                    <rect key="frame" x="185.5" y="-0.5" width="34" height="34"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" backgroundImage="reading_btn_change_bg_2_normal">
+                                        <color key="titleColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="reading_btn_change_bg_2_pressed"/>
+                                    <connections>
+                                        <action selector="onPressedChangeBGBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="PvW-po-Fmd"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Yp-Ch-BZ4">
+                                    <rect key="frame" x="70.5" y="0.0" width="33" height="33"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" backgroundImage="reading_btn_change_bg_1_normal">
+                                        <color key="titleColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="reading_btn_change_bg_1_pressed"/>
+                                    <connections>
+                                        <action selector="onPressedChangeBGBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="gbL-1a-O43"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="240" horizontalCompressionResistancePriority="740" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D15-xq-Zbf">
+                                    <rect key="frame" x="128.5" y="0.0" width="33" height="33"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                    <state key="normal" backgroundImage="reading_btn_change_bg_3_normal">
+                                        <color key="titleColor" red="0.80784313730000001" green="0.80784313730000001" blue="0.80784313730000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </state>
+                                    <state key="selected" backgroundImage="reading_btn_change_bg_3_pressed"/>
+                                    <connections>
+                                        <action selector="onPressedChangeBGBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="Dpe-T8-Hdf"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="VgU-Es-vlK" firstAttribute="centerY" secondItem="Y0y-Ba-uId" secondAttribute="centerY" id="8pv-rY-VGA"/>
+                                <constraint firstAttribute="height" constant="33" id="B57-qL-Fzh"/>
+                                <constraint firstItem="Bft-bv-pOZ" firstAttribute="centerY" secondItem="Y0y-Ba-uId" secondAttribute="centerY" id="BKn-m1-aqy"/>
+                                <constraint firstItem="D15-xq-Zbf" firstAttribute="centerX" secondItem="Y0y-Ba-uId" secondAttribute="centerX" multiplier="5/4" id="Dew-AM-w9J"/>
+                                <constraint firstItem="3Yp-Ch-BZ4" firstAttribute="centerX" secondItem="Y0y-Ba-uId" secondAttribute="centerX" multiplier="3/4" id="KTJ-bi-ZDp"/>
+                                <constraint firstItem="VgU-Es-vlK" firstAttribute="centerX" secondItem="Y0y-Ba-uId" secondAttribute="centerX" multiplier="7/4" id="Kl2-uB-lAI"/>
+                                <constraint firstItem="D15-xq-Zbf" firstAttribute="centerY" secondItem="Y0y-Ba-uId" secondAttribute="centerY" id="PFP-PP-GFy"/>
+                                <constraint firstItem="Bft-bv-pOZ" firstAttribute="centerX" secondItem="Y0y-Ba-uId" secondAttribute="centerX" multiplier="1/4" id="j6w-AH-mQm"/>
+                                <constraint firstItem="3Yp-Ch-BZ4" firstAttribute="centerY" secondItem="Y0y-Ba-uId" secondAttribute="centerY" id="n1F-dK-1Vg"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="zyd-6K-54v" secondAttribute="centerY" id="FwX-hw-byA"/>
+                        <constraint firstItem="Y0y-Ba-uId" firstAttribute="centerY" secondItem="zyd-6K-54v" secondAttribute="centerY" id="Va4-fH-Qf0"/>
+                        <constraint firstItem="zyd-6K-54v" firstAttribute="leading" secondItem="Avt-iG-3ao" secondAttribute="leading" constant="20" id="cOg-pJ-28s"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nxl-WX-mTr">
+                    <rect key="frame" x="0.0" y="169" width="320" height="45"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1jC-en-b4L">
+                            <rect key="frame" x="108.5" y="10" width="103" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                            <state key="normal" title="  更多设置  " backgroundImage="reading_btn_setting1">
+                                <color key="titleColor" red="0.73333333333333328" green="0.73333333333333328" blue="0.73333333333333328" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" backgroundImage="reading_btn_bg_pressed"/>
+                            <state key="highlighted" backgroundImage="reading_btn_bg_pressed"/>
+                            <connections>
+                                <action selector="onPressedGotoMoreSettingBtn:" destination="BtZ-Oa-uC9" eventType="touchUpInside" id="IFw-Rm-xKQ"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="1jC-en-b4L" firstAttribute="centerY" secondItem="Nxl-WX-mTr" secondAttribute="centerY" id="AeA-6c-ZUx"/>
+                        <constraint firstItem="1jC-en-b4L" firstAttribute="centerX" secondItem="Nxl-WX-mTr" secondAttribute="centerX" id="LOz-U1-iyi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="q9I-F5-RSU" firstAttribute="width" secondItem="aOH-eF-neZ" secondAttribute="width" id="6o5-bg-QMu"/>
+                <constraint firstItem="aOH-eF-neZ" firstAttribute="top" secondItem="q9I-F5-RSU" secondAttribute="bottom" id="9FN-mi-06d"/>
+                <constraint firstItem="q9I-F5-RSU" firstAttribute="height" secondItem="Avt-iG-3ao" secondAttribute="height" id="Bn1-4U-a8f"/>
+                <constraint firstAttribute="bottom" secondItem="Nxl-WX-mTr" secondAttribute="bottom" id="DT0-J1-WWX"/>
+                <constraint firstItem="Nxl-WX-mTr" firstAttribute="width" secondItem="Avt-iG-3ao" secondAttribute="width" id="Fid-Ki-eYG"/>
+                <constraint firstItem="q9I-F5-RSU" firstAttribute="width" secondItem="Avt-iG-3ao" secondAttribute="width" id="HIt-dp-Czt"/>
+                <constraint firstItem="Y0y-Ba-uId" firstAttribute="leading" secondItem="6MP-rl-36v" secondAttribute="leading" id="Hi4-an-jhC"/>
+                <constraint firstItem="Y0y-Ba-uId" firstAttribute="trailing" secondItem="y0f-ki-2l8" secondAttribute="trailing" id="Oyf-36-Cbm"/>
+                <constraint firstItem="aOH-eF-neZ" firstAttribute="leading" secondItem="Avt-iG-3ao" secondAttribute="leading" id="Wxr-Of-v0d"/>
+                <constraint firstItem="q9I-F5-RSU" firstAttribute="top" secondItem="BtZ-Oa-uC9" secondAttribute="top" constant="10" id="Ynj-hk-p5i"/>
+                <constraint firstItem="Nxl-WX-mTr" firstAttribute="trailing" secondItem="Avt-iG-3ao" secondAttribute="trailing" id="ccj-CO-hNl"/>
+                <constraint firstItem="q9I-F5-RSU" firstAttribute="height" secondItem="aOH-eF-neZ" secondAttribute="height" id="etq-sb-p5u"/>
+                <constraint firstItem="Nxl-WX-mTr" firstAttribute="height" secondItem="Avt-iG-3ao" secondAttribute="height" multiplier="45/53" id="gZj-4F-f9x"/>
+                <constraint firstItem="aOH-eF-neZ" firstAttribute="leading" secondItem="q9I-F5-RSU" secondAttribute="leading" id="l8O-Nv-44T"/>
+                <constraint firstItem="Nxl-WX-mTr" firstAttribute="top" secondItem="Avt-iG-3ao" secondAttribute="bottom" id="ooa-IM-SjU"/>
+                <constraint firstItem="Avt-iG-3ao" firstAttribute="top" secondItem="aOH-eF-neZ" secondAttribute="bottom" id="qHl-KB-8Lc"/>
+                <constraint firstAttribute="trailing" secondItem="Avt-iG-3ao" secondAttribute="trailing" id="rc0-xl-l3u"/>
+                <constraint firstItem="Nxl-WX-mTr" firstAttribute="leading" secondItem="Avt-iG-3ao" secondAttribute="leading" id="xXE-PW-Y7V"/>
+                <constraint firstItem="Avt-iG-3ao" firstAttribute="leading" secondItem="BtZ-Oa-uC9" secondAttribute="leading" id="zs2-sO-QkJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="biggerFontBtn" destination="akW-qg-PAF" id="7h4-ph-S4y"/>
+                <outlet property="originalFontBtn" destination="6MP-rl-36v" id="sHj-YL-TfB"/>
+                <outlet property="simplifiedBtn" destination="oht-cZ-j4r" id="Exw-sw-Apa"/>
+                <outlet property="smallerFontBtn" destination="Ecp-9l-9xr" id="z9L-w8-NCB"/>
+                <outlet property="traditionalBtn" destination="y0f-ki-2l8" id="Y0S-gv-3QC"/>
+                <outletCollection property="gestureRecognizers" destination="zRb-xR-q0g" appends="YES" id="pyF-J5-udx"/>
+                <outletCollection property="bgBtns" destination="3Yp-Ch-BZ4" id="IPv-qQ-lKo"/>
+                <outletCollection property="bgBtns" destination="VgU-Es-vlK" id="7BE-oS-mLF"/>
+                <outletCollection property="bgBtns" destination="D15-xq-Zbf" id="azZ-7S-wG5"/>
+                <outletCollection property="bgBtns" destination="Bft-bv-pOZ" id="SiT-TD-bGu"/>
+            </connections>
+            <point key="canvasLocation" x="403" y="978"/>
+        </view>
+        <tapGestureRecognizer id="zRb-xR-q0g"/>
+    </objects>
+    <resources>
+        <image name="reading_btn_bg_normal" width="29" height="33"/>
+        <image name="reading_btn_bg_pressed" width="29" height="33"/>
+        <image name="reading_btn_change_bg_1_normal" width="33" height="33"/>
+        <image name="reading_btn_change_bg_1_pressed" width="33" height="33"/>
+        <image name="reading_btn_change_bg_2_normal" width="34" height="34"/>
+        <image name="reading_btn_change_bg_2_pressed" width="33" height="33"/>
+        <image name="reading_btn_change_bg_3_normal" width="33" height="33"/>
+        <image name="reading_btn_change_bg_3_pressed" width="33" height="33"/>
+        <image name="reading_btn_change_bg_4_normal" width="33" height="33"/>
+        <image name="reading_btn_change_bg_4_pressed" width="33" height="33"/>
+        <image name="reading_btn_setting1" width="23" height="25"/>
+    </resources>
+</document>

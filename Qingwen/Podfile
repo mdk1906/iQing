@@ -1,0 +1,117 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target "Qingwen" do
+
+#loading
+pod 'MBProgressHUD'
+
+#refresh
+pod 'MJRefresh'
+
+#model
+pod 'JSONModel'
+
+#net
+pod 'AFNetworking'
+pod 'AFNetworking+AutoRetry'
+pod 'SDWebImage'
+pod 'SDWebImage/WebP'
+
+#autolayout
+pod 'PureLayout'
+
+#label
+pod 'YYText'
+
+#block
+pod 'BlocksKit'
+pod 'Block-KVO', :git => "https://github.com/iMartinKiss/Block-KVO.git"
+
+#navigation
+pod 'FDFullscreenPopGesture'
+
+#hotfix
+#pod 'JSPatch'
+
+#toast
+pod 'CRToast', :git => "https://github.com/cruffenach/CRToast.git"
+
+#database
+pod 'MagicalRecord'
+
+#empty
+pod 'DZNEmptyDataSet'
+
+#animation
+#pod 'pop'
+
+#picker
+pod 'ActionSheetPicker-3.0'
+
+#version
+pod 'GBVersionTracking'
+
+#debug
+pod 'Reveal-iOS-SDK', :configurations => ['Debug']
+
+#crash
+pod 'Fabric', :configurations => ['Release']
+pod 'Crashlytics', :configurations => ['Release']
+
+#cell
+pod 'UITableView+FDTemplateLayoutCell'
+
+#segment
+pod 'MXSegmentedPager'
+
+#统计
+pod 'UMengAnalytics-NO-IDFA', :configurations => ['Release']
+
+#微博
+#pod 'WeiboSDK', :git => 'https://github.com/sinaweibosdk/weibo_ios_sdk.git'
+
+#layout
+pod 'iCarousel'
+pod 'FDStackView'
+
+#badge
+pod 'JSBadgeView'
+
+#progress
+pod 'FFCircularProgressView'
+
+#zip
+pod 'ZipArchive'
+
+#photo
+pod 'PEPhotoCropEditor'
+
+#image
+pod 'NYXImagesKit'
+
+#1password
+pod '1PasswordExtension'
+
+#弹幕
+#pod 'BarrageRenderer', '~> 1.9.0'
+#testview
+#pod 'KMPlaceholderTextView'
+
+#引导页
+#pod 'ZWIntroductionViewController'
+
+#scrollview
+#pod 'LTInfiniteScrollView'
+
+pod "YumiMediationSDK"
+pod "YumiMediationDebugCenter-iOS" 
+
+pod 'Bytedance-UnionAD', '~> 1.9.8.2'
+
+pod 'GDTMobSDK'
+
+end

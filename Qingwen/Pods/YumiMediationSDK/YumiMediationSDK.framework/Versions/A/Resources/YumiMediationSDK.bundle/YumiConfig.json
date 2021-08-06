@@ -1,0 +1,44 @@
+{
+    "requestID": "", 
+    "reqIP": "", 
+    "cpID": 0, 
+    "devID": 0, 
+    "appID": "", 
+    "slotID": "{{SLOT_ID}}", 
+    "configID": 0, 
+    "configType": 1, 
+    "interval": 30, 
+    "manualCancel": 0, 
+    "retryLimit": 1000, 
+    "incentived": 1000, 
+    "trans": "", 
+    "feedsAdNumber": 5, 
+    "doubleConfirm": 0, 
+    "spaceTime": 600, 
+    "logUrl": "http://tracker2.yumimobi.com/api/2.0/mediation/report.php", 
+    "providers": [
+        {
+            "providerID": "20001", 
+            "isHeaderBid": 0,
+            "sameAsLast" : 0,
+            "outTime": 15, 
+            "reqType": 1, 
+            "browserType": 1, 
+            "materialEtime": 7200, 
+            "nextRequestInterval": 300, 
+            "keys": {
+                "key1": "{{SLOT_ID}}",
+                "key2": "",
+                "key3": ""
+            },
+            "template": {},
+            "ecpm": "",
+            "currency": "",
+            "payload": "",
+            "wurl": [],
+            "burl": [],
+            "errCode": 200,
+            "errMessage": ""
+        }
+    ]
+}

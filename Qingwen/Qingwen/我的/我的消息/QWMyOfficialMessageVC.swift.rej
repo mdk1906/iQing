@@ -1,0 +1,53 @@
+diff a/Qingwen/我的/我的消息/QWMyOfficialMessageVC.swift b/Qingwen/我的/我的消息/QWMyOfficialMessageVC.swift	(rejected hunks)
+@@ -126,7 +126,48 @@ extension QWMyOfficialMessageVC {
+ 
+     override func didSelectedCellAtIndexPath(indexPath: NSIndexPath) {
+         if let message = self.listVO?.results[indexPath.section] as? MyOfficialMessageVO, let intent = message.intent where (intent as NSString).length > 0 {
+-            QWRouter.sharedInstance().routerWithUrlString(intent)
++//            QWRouter.sharedInstance().routerWithUrlString(intent)
++                        let actionSheet = UIActionSheet.bk_actionSheetWithTitle("") as! UIActionSheet
++                        actionSheet.bk_addButtonWithTitle("复制", handler: {
++                            //复制字符串到剪贴板
++                            let pasteboard = UIPasteboard.generalPasteboard()
++                            pasteboard.string = message.body
++                            self.showLoadingWithMessage("复制成功",hideAfter: 1.0)
++                        })
++            
++                        let rangeArray = "".matchURlArray(message.body)
++            
++                        if  rangeArray?.count > 0 {
++            
++                            for index in 0...rangeArray!.count - 1  {
++            
++                                let match = rangeArray![index] as! NSTextCheckingResult
++            
++                                let matchStr:String = (message.body! as NSString).substringWithRange(match.range)
++            
++                                var titleString:String = matchStr
++            
++                                   if matchStr.length > 30 {
++            
++                                        titleString = (matchStr as NSString).substringWithRange(NSMakeRange(0, 27)) + "..."
++                                    }
++                                actionSheet.bk_addButtonWithTitle(titleString, handler: {
++            
++                                    if let array = "".getRouterVCUrlStringFromUrlArray(matchStr) {
++                                        QWRouter.sharedInstance().routerWithUrlString(NSString.getRouterVCUrlStringFromUrlString(array[0] as! String, andParams: [array[1] as! String:array[2]]))
++                                    }else {
++                                        QWRouter.sharedInstance().routerWithUrlString(matchStr)
++                                    }
++                                })
++                                
++                            }
++            
++                        }
++                        actionSheet.bk_setCancelButtonWithTitle("取消", handler: {
++                            
++                        })
++                        actionSheet.showInView(self.view)
++            
++            }
+         }
+     }
+-}
+\ No newline at end of file

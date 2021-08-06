@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Xcode 4.3">
+    <entity name="BookCD" representedClassName="BookCD" syncable="YES">
+        <attribute name="attention" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="attentionTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="author_name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="author_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="bf_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapter_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapter_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapterIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="coin" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="cover" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="created_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="download" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="follow_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_chapter_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="last_chapter_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_chapter_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_volume_id" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="last_volume_title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="last_volume_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastDownloadTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastReadTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastViewDiscuss" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="like_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="locate" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="press" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="press_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="readingProgress" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="share_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="subscribe_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unsubscribe_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="updated_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="views" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="volume_count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="volume_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="volumeIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="relationship" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BookContinueReadingCD" inverseName="book" inverseEntity="BookContinueReadingCD" syncable="YES"/>
+    </entity>
+    <entity name="BookContinueReadingCD" representedClassName="BookContinueReadingCD" syncable="YES">
+        <attribute name="bookId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="chapterIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="readingProgress" optional="YES" attributeType="Double" defaultValueString="0" syncable="YES"/>
+        <attribute name="volumeIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <relationship name="book" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BookCD" inverseName="relationship" inverseEntity="BookCD" syncable="YES"/>
+    </entity>
+    <entity name="VolumeCD" representedClassName="VolumeCD" syncable="YES">
+        <attribute name="bookId" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="bookTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapter_url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chapterIndex" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="completedUnitCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="count" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="download" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="intro" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastDownloadTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="lastReadTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="nid" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="read" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="totalUnitCount" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="updated_time" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="views" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="volume_url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="BookCD" positionX="-63" positionY="-18" width="128" height="735"/>
+        <element name="BookContinueReadingCD" positionX="-63" positionY="135" width="128" height="135"/>
+        <element name="VolumeCD" positionX="-54" positionY="135" width="128" height="390"/>
+    </elements>
+</model>

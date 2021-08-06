@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QWSendDanmuButton">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFY-xl-cwA">
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 99 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AbL-ee-CFe">
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="dFY-xl-cwA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="7G2-oS-7y6"/>
+                <constraint firstAttribute="bottom" secondItem="dFY-xl-cwA" secondAttribute="bottom" id="7mq-Wl-6u3"/>
+                <constraint firstAttribute="trailing" secondItem="dFY-xl-cwA" secondAttribute="trailing" id="Cva-bd-lHj"/>
+                <constraint firstItem="AbL-ee-CFe" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="M5b-2J-7on"/>
+                <constraint firstItem="dFY-xl-cwA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Moj-JN-DgY"/>
+                <constraint firstAttribute="trailing" secondItem="AbL-ee-CFe" secondAttribute="trailing" constant="7" id="glB-8a-kB7"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                    <real key="value" value="0.34000000000000002"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="countLabel" destination="AbL-ee-CFe" id="skX-v8-MU9"/>
+                <outlet property="countLabelTrailing" destination="glB-8a-kB7" id="MBQ-3s-Rf5"/>
+                <outlet property="titleLabel" destination="dFY-xl-cwA" id="HeX-4T-Yq2"/>
+                <outlet property="titleLeading" destination="7G2-oS-7y6" id="5Q1-Fk-Ack"/>
+            </connections>
+            <point key="canvasLocation" x="-104" y="66"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,133 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+<title>APP广告</title>
+<style>
+*{margin:0; padding:0}
+a{position:fixed; left:0; top:0; width:%@; height:%@; text-decoration:none; overflow:hidden; background:#fff;}
+.wrap{ position: absolute; left:0; top:%@; width:%@;overflow:hidden; }
+#icon{ position:absolute; left:5px; top:5px; }
+.box{ width:%@; box-sizing:border-box; }
+.title{ font-weight:bold; color:#333; overflow:hidden}
+.textWrap{ overflow:hidden; }
+.text{ overflow:hidden; color:#666; }
+.starBox{ overflow: hidden; vertical-align: middle; }
+.star{ display:inline-block;  margin-right:2px; background-size: %@ %@; background-repeat: no-repeat; background-image: url("https://static.zplay.cn/wap/ad/star.jpg");  }
+.load{ position:absolute; text-align: center; color:#fff; font-weight: bold; border-radius:5px; font-style: normal; border-width:1px; border-style:solid; border-top-color:#a6e304; border-right-color:#61af01; border-bottom-color:#368302; border-left-color:#70b801;background:-webkit-linear-gradient(#90c900,#419e02);background:-0-linear-gradient(#90c900,#419e02);background:-moz-linear-gradient(#90c900,#419e02);background:-webkit-linear-gradient(#90c900,#419e02);background:linear-gradient(#90c900,#419e02) }
+</style>
+</head>
+
+<body>
+<a href="%@">
+	<div class="wrap">
+    	<img id="icon" src="%@" alt="" />
+        <div class="box">
+        	<h3 class="title">%@</h3>
+            <div class="textWrap">
+            	<div class="textBox">
+                	<p class="text">%@</p>
+                </div>
+            </div>
+            <div class="starBox"><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i><i class="star"></i></div>
+        </div>
+        <span class="load">点击查看</span>
+    </div>
+</a>
+<script type="text/javascript">
+	window.onload = function(){
+		var wrap = document.querySelector(".wrap"),
+			box = document.querySelector(".box"),
+			textWrap = document.querySelector(".textWrap"),
+			text = document.querySelector(".text"),
+			title = document.querySelector(".title"),
+			icon = document.getElementById("icon"),
+			starBox = document.querySelector(".starBox"),
+			star = starBox.getElementsByTagName("i"),
+			load = document.querySelector(".load");
+		if(window.innerHeight < 90){
+			wrap.style.marginTop = "-25px";
+			wrap.style.height = "50px";
+			icon.style.width = "40px";
+			icon.style.height = "40px";
+			box.style.paddingLeft = "52px";
+			box.style.paddingRight = "75px";
+			title.style.fontSize = "13px";
+			title.style.height = "20px";
+			title.style.lineHeight = "20px";
+			textWrap.style.fontSize = "12px";
+			textWrap.style.height = "14px";
+			textWrap.style.lineHeight = "14px";
+			starBox.style.height = "16px";
+			starBox.style.lineHeight = "16px";
+			load.style.width = "60px";
+			load.style.height = "28px";
+			load.style.lineHeight = "28px";
+			load.style.top = "10px";
+			load.style.right = "5px";
+			load.style.fontSize = "12px";
+			text.style.maxHeight = "28px";
+			h = 14;
+			for(var i = 0; i < star.length; i++){
+				star[i].style.width = "12px";
+				star[i].style.height = "12px";
+			}
+		}else{
+			wrap.style.marginTop = "-45px";
+			wrap.style.height = "90px";
+			icon.style.width = "80px";
+			icon.style.height = "80px";
+			box.style.paddingLeft = "92px";
+			box.style.paddingRight = "130px";
+			title.style.fontSize = "24px";
+			title.style.height = "30px";
+			title.style.lineHeight = "30px";
+			textWrap.style.fontSize = "20px";
+			textWrap.style.height = "35px";
+			textWrap.style.lineHeight = "35px";
+			starBox.style.height = "24px";
+			starBox.style.lineHeight = "24px";
+			load.style.width = "120px";
+			load.style.height = "60px";
+			load.style.lineHeight = "60px";
+			load.style.top = "15px";
+			load.style.right = "8px";
+			load.style.fontSize = "24px";
+			text.style.maxHeight = "70px";
+			h = 35;
+			for(var i = 0; i < star.length; i++){
+				star[i].style.width = "20px";
+				star[i].style.height = "20px";
+			}
+		}
+		var oDiv = document.querySelector(".textBox");
+		startmove(h,20,oDiv)
+	}
+	function startmove(h,speed,oDiv){
+		var time;
+		oDiv.innerHTML +=oDiv.innerHTML;
+		oDiv.style.marginTop = 0;
+		function scrolling(){
+			if( parseInt(oDiv.style.marginTop) %@ h != 0 ){
+				oDiv.style.marginTop = parseInt(oDiv.style.marginTop) -1 +'px';
+				if( Math.abs(parseInt(oDiv.style.marginTop)) >= oDiv.offsetHeight/2 ){
+					oDiv.style.marginTop = 0;
+				}
+			}else{
+				clearInterval(time);
+				setTimeout(start,5000)
+			}
+		}
+		function start(){
+			
+			time = setInterval(scrolling,speed);
+			oDiv.style.marginTop = parseInt(oDiv.style.marginTop) -1 +'px';
+			
+		}
+		setTimeout(start,5000);
+	}
+
+</script>
+</body>
+</html>

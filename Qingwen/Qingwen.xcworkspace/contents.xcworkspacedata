@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "group:Auto"
+      name = "Auto">
+      <FileRef
+         location = "group:addcrashlytics.sh">
+      </FileRef>
+      <FileRef
+         location = "group:getcurrentbranchgitversion.sh">
+      </FileRef>
+   </Group>
+   <FileRef
+      location = "group:Qingwen.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

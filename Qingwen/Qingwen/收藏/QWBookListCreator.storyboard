@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="YEc-NT-R3I">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--BaseNC-->
+        <scene sceneID="BWn-8u-zwh">
+            <objects>
+                <navigationController id="3MZ-gg-PS8" customClass="QWBaseNC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YmL-k3-4j9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YEc-NT-R3I" kind="relationship" relationship="rootViewController" id="Nwc-G9-CkG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f09-Ma-1Xy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-183" y="-184"/>
+        </scene>
+        <!--新建书单-->
+        <scene sceneID="m8R-ou-9zH">
+            <objects>
+                <viewController storyboardIdentifier="CreateNewBooksList" id="YEc-NT-R3I" customClass="QWBooksListCreate" customModule="Qingwen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KMm-mo-qL9"/>
+                        <viewControllerLayoutGuide type="bottom" id="QlJ-Nt-A6i"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bge-SM-fAw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名称:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-gL-D7l">
+                                <rect key="frame" x="12" y="89" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" borderStyle="roundedRect" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bl5-Mp-xSd">
+                                <rect key="frame" x="54.5" y="130.5" width="308.5" height="115"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="115" id="LCD-Td-CkR"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.68235294117647061" green="0.68235294117647061" blue="0.68235294117647061" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gNd-Dn-wtd">
+                                <rect key="frame" x="54.5" y="82.5" width="308.5" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wTn-Fa-pSs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GAO-vu-KAb">
+                                <rect key="frame" x="12" y="132" width="30.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gNd-Dn-wtd" firstAttribute="leading" secondItem="8wr-gL-D7l" secondAttribute="trailing" constant="12" id="Hi1-FD-hfx"/>
+                            <constraint firstAttribute="trailing" secondItem="bl5-Mp-xSd" secondAttribute="trailing" constant="12" id="TNi-Uu-Gaj"/>
+                            <constraint firstItem="gNd-Dn-wtd" firstAttribute="centerY" secondItem="8wr-gL-D7l" secondAttribute="centerY" id="UBm-0o-nyB"/>
+                            <constraint firstItem="GAO-vu-KAb" firstAttribute="leading" secondItem="bge-SM-fAw" secondAttribute="leading" constant="12" id="V8c-uI-VX8"/>
+                            <constraint firstItem="8wr-gL-D7l" firstAttribute="top" secondItem="KMm-mo-qL9" secondAttribute="bottom" constant="25" id="Vbk-x4-mJ7"/>
+                            <constraint firstItem="bl5-Mp-xSd" firstAttribute="top" secondItem="gNd-Dn-wtd" secondAttribute="bottom" constant="18" id="Vcl-8c-CWw"/>
+                            <constraint firstItem="bl5-Mp-xSd" firstAttribute="leading" secondItem="GAO-vu-KAb" secondAttribute="trailing" constant="12" id="ZAu-FK-PS2"/>
+                            <constraint firstItem="8wr-gL-D7l" firstAttribute="leading" secondItem="bge-SM-fAw" secondAttribute="leading" constant="12" id="aaJ-BE-l8Z"/>
+                            <constraint firstItem="GAO-vu-KAb" firstAttribute="top" secondItem="8wr-gL-D7l" secondAttribute="bottom" constant="27" id="isn-68-AHa"/>
+                            <constraint firstAttribute="trailing" secondItem="gNd-Dn-wtd" secondAttribute="trailing" constant="12" id="yoT-9C-B6B"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="新建书单" id="r3j-o1-Rmp">
+                        <barButtonItem key="backBarButtonItem" title="取消" id="BLh-8z-iTW"/>
+                        <barButtonItem key="rightBarButtonItem" title="保存" id="Wic-JR-LFk">
+                            <connections>
+                                <action selector="saveBtnCliecked:" destination="YEc-NT-R3I" id="Sb8-iQ-HZr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="intro" destination="bl5-Mp-xSd" id="VHn-LY-Ep1"/>
+                        <outlet property="name" destination="gNd-Dn-wtd" id="8TR-zu-wGn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Acd-th-anY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="633" y="-185"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+</document>

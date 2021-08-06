@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Cpe-AR-LCt" customClass="QWChoiceSecondView" customModule="Qingwen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="wEz-zw-DWM">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                    <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="300" id="XvV-RJ-hHI"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rXk-cy-8F1">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="Cpe-AR-LCt" id="zXC-MT-msU"/>
+                        <outlet property="delegate" destination="Cpe-AR-LCt" id="Wpw-fs-9xa"/>
+                    </connections>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-yT-pT2">
+                    <rect key="frame" x="0.0" y="300" width="375" height="367"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="wEz-zw-DWM" firstAttribute="leading" secondItem="Cpe-AR-LCt" secondAttribute="leading" id="AVa-ot-uoD"/>
+                <constraint firstItem="BQ8-yT-pT2" firstAttribute="top" secondItem="wEz-zw-DWM" secondAttribute="bottom" id="Iip-Qk-hZa"/>
+                <constraint firstAttribute="trailing" secondItem="wEz-zw-DWM" secondAttribute="trailing" id="U9t-W4-UHx"/>
+                <constraint firstItem="wEz-zw-DWM" firstAttribute="top" secondItem="Cpe-AR-LCt" secondAttribute="top" id="V6F-F8-cEq"/>
+                <constraint firstAttribute="bottom" secondItem="BQ8-yT-pT2" secondAttribute="bottom" id="XVc-Lo-NsC"/>
+                <constraint firstItem="BQ8-yT-pT2" firstAttribute="leading" secondItem="Cpe-AR-LCt" secondAttribute="leading" id="aPv-YR-6id"/>
+                <constraint firstAttribute="trailing" secondItem="BQ8-yT-pT2" secondAttribute="trailing" id="zGz-yj-YH2"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="wEz-zw-DWM" id="eft-2g-c2d"/>
+                <outlet property="coverView" destination="BQ8-yT-pT2" id="fDD-YR-6yg"/>
+                <outlet property="heightLayout" destination="XvV-RJ-hHI" id="6YX-Cu-wJ9"/>
+                <outlet property="layout" destination="rXk-cy-8F1" id="cOX-2a-OJW"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="807"/>
+        </view>
+    </objects>
+</document>

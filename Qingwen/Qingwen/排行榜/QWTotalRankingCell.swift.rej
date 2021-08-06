@@ -1,0 +1,34 @@
+diff a/Qingwen/排行榜/QWTotalRankingCell.swift b/Qingwen/排行榜/QWTotalRankingCell.swift	(rejected hunks)
+@@ -19,25 +19,20 @@ class QWTotalRankingCell: QWListTVCell {
+         switch type {
+         case .StoneRank:
+             if let coin = book.coin {
+-                if self.reuseIdentifier == "game" {
+-                    self.goldLabel.text = "轻石: \(QWHelper.countToShortString(coin))"
+-                }
+-                else {
+-                    self.goldLabel.text = "轻石: \(coin)"
+-                }
++                self.goldLabel.text = "轻石: \(coin)"
+             }else {
+                 self.viewsLabel.text = "轻石: 0"
+             }
+         case .CollectionRank:
+-            self.goldLabel.text = "收藏数:"
++            if let collectionCount = book.follow_count {
++                self.goldLabel.text = "收藏数:\(QWHelper.countToShortString(collectionCount))"
++            } else {
++                self.goldLabel.text = "收藏数: 0"
++
++            }
+         case .GoldRank:
+             if let gold = book.gold {
+-                if self.reuseIdentifier == "game" {
+-                    self.goldLabel.text = "重石: \(QWHelper.countToShortString(gold))"
+-                }
+-                else {
+                     self.goldLabel.text = "重石: \(gold)"
+-                }
+             }
+             else {
+                 self.goldLabel.text = "重石: 0"

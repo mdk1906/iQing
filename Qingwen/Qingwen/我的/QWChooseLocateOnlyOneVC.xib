@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QWChooseLocateVC" customModule="Qingwen" customModuleProvider="target">
+            <connections>
+                <outlet property="locate10Btn" destination="TB8-wF-Jcf" id="hLD-Co-8w5"/>
+                <outlet property="locate11Btn" destination="kJX-KV-O2R" id="gE6-hi-rcp"/>
+                <outlet property="view" destination="BRT-sA-LfC" id="aIe-7u-Doj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="BRT-sA-LfC">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择喜欢的轻小说分区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xyh-vP-zQR">
+                    <rect key="frame" x="40" y="45" width="240" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="locate_logo" translatesAutoresizingMaskIntoConstraints="NO" id="vyI-o7-Eim">
+                    <rect key="frame" x="160" y="416" width="150" height="54"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6V5-pt-O1b">
+                    <rect key="frame" x="10" y="104" width="300" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locate_boy" translatesAutoresizingMaskIntoConstraints="NO" id="45D-sN-TIz">
+                            <rect key="frame" x="10" y="30" width="35" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="0yU-7n-aKJ"/>
+                                <constraint firstAttribute="width" secondItem="45D-sN-TIz" secondAttribute="height" multiplier="6:7" id="kgQ-Vd-NrP"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="少年区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kW7-Zh-gQC">
+                            <rect key="frame" x="55" y="10" width="60" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" text="幻想/战斗/热血/异界/后宫/奇幻/冒险/末世/伦理/秀吉/科幻/历史......" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7h2-Sx-6A2">
+                            <rect key="frame" x="55" y="49" width="235" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.52941176469999995" green="0.81960784310000001" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="kW7-Zh-gQC" firstAttribute="leading" secondItem="45D-sN-TIz" secondAttribute="trailing" constant="10" id="257-7y-So8"/>
+                        <constraint firstItem="45D-sN-TIz" firstAttribute="leading" secondItem="6V5-pt-O1b" secondAttribute="leading" constant="10" id="31P-qf-qcB"/>
+                        <constraint firstItem="7h2-Sx-6A2" firstAttribute="leading" secondItem="kW7-Zh-gQC" secondAttribute="leading" id="HpP-ht-1tU"/>
+                        <constraint firstAttribute="trailing" secondItem="7h2-Sx-6A2" secondAttribute="trailing" constant="10" id="PS1-iT-ly4"/>
+                        <constraint firstAttribute="height" constant="100" id="emg-Ye-MAW"/>
+                        <constraint firstItem="7h2-Sx-6A2" firstAttribute="top" secondItem="kW7-Zh-gQC" secondAttribute="bottom" constant="15" id="n8j-e8-uAF"/>
+                        <constraint firstItem="kW7-Zh-gQC" firstAttribute="top" secondItem="6V5-pt-O1b" secondAttribute="top" constant="10" id="rOS-DX-uDx"/>
+                        <constraint firstItem="45D-sN-TIz" firstAttribute="centerY" secondItem="6V5-pt-O1b" secondAttribute="centerY" id="xJz-Kc-QAV"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="zfq-2M-wRP"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YCw-xK-Exe">
+                    <rect key="frame" x="10" y="234" width="300" height="100"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="locate_girl" translatesAutoresizingMaskIntoConstraints="NO" id="aYg-84-AhW">
+                            <rect key="frame" x="10" y="26" width="35" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="35" id="qyl-XD-osf"/>
+                                <constraint firstAttribute="width" secondItem="aYg-84-AhW" secondAttribute="height" multiplier="44:61" id="r2G-BS-hc1"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="少女区" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="obE-5q-5vA">
+                            <rect key="frame" x="55" y="10" width="60" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="240" verticalHuggingPriority="251" horizontalCompressionResistancePriority="740" text="言情/耽美/古风/宫斗/女主/日常/校园/青春/推理/重生/主仆/百合......" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v43-qd-NmV">
+                            <rect key="frame" x="55" y="49" width="235" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.63137254899999995" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="aYg-84-AhW" firstAttribute="centerY" secondItem="YCw-xK-Exe" secondAttribute="centerY" id="4CD-qo-Qhk"/>
+                        <constraint firstAttribute="height" constant="100" id="9dz-yN-QKh"/>
+                        <constraint firstItem="aYg-84-AhW" firstAttribute="leading" secondItem="YCw-xK-Exe" secondAttribute="leading" constant="10" id="Oke-Jx-2mo"/>
+                        <constraint firstItem="obE-5q-5vA" firstAttribute="top" secondItem="YCw-xK-Exe" secondAttribute="top" constant="10" id="QfL-WG-ZIW"/>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="fYN-S5-bpx"/>
+                        <constraint firstAttribute="trailing" secondItem="v43-qd-NmV" secondAttribute="trailing" constant="10" id="fxF-fa-11I"/>
+                        <constraint firstItem="obE-5q-5vA" firstAttribute="leading" secondItem="aYg-84-AhW" secondAttribute="trailing" constant="10" id="ltd-86-L67"/>
+                        <constraint firstItem="v43-qd-NmV" firstAttribute="leading" secondItem="obE-5q-5vA" secondAttribute="leading" id="ywG-Jb-25r"/>
+                        <constraint firstItem="v43-qd-NmV" firstAttribute="top" secondItem="obE-5q-5vA" secondAttribute="bottom" constant="15" id="z4i-3y-Ubt"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TB8-wF-Jcf">
+                    <rect key="frame" x="6" y="100" width="308" height="108"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94509803920000002" green="0.34509803919999998" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onPressedBoyBtn:" destination="-1" eventType="touchUpInside" id="6uP-Or-fMW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJX-KV-O2R">
+                    <rect key="frame" x="6" y="230" width="308" height="108"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="15"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94509803920000002" green="0.34509803919999998" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="onPressedBoyBtn:" destination="-1" eventType="touchUpInside" id="Jz6-Oh-qAM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Xyh-vP-zQR" firstAttribute="centerX" secondItem="BRT-sA-LfC" secondAttribute="centerX" id="DjN-94-adn"/>
+                <constraint firstItem="Xyh-vP-zQR" firstAttribute="top" secondItem="BRT-sA-LfC" secondAttribute="top" constant="45" id="FWa-Vh-Wjp"/>
+                <constraint firstItem="TB8-wF-Jcf" firstAttribute="width" secondItem="6V5-pt-O1b" secondAttribute="width" constant="8" id="Fwy-Bd-Gvd"/>
+                <constraint firstItem="YCw-xK-Exe" firstAttribute="top" secondItem="6V5-pt-O1b" secondAttribute="bottom" constant="30" id="NYF-kn-TSd"/>
+                <constraint firstItem="TB8-wF-Jcf" firstAttribute="height" secondItem="6V5-pt-O1b" secondAttribute="height" constant="8" id="NZo-FC-fdQ"/>
+                <constraint firstItem="TB8-wF-Jcf" firstAttribute="centerY" secondItem="6V5-pt-O1b" secondAttribute="centerY" id="Niy-ME-2w8"/>
+                <constraint firstItem="kJX-KV-O2R" firstAttribute="height" secondItem="YCw-xK-Exe" secondAttribute="height" constant="8" id="ORY-9H-erR"/>
+                <constraint firstItem="kJX-KV-O2R" firstAttribute="centerY" secondItem="YCw-xK-Exe" secondAttribute="centerY" id="QnO-hE-kWj"/>
+                <constraint firstItem="kJX-KV-O2R" firstAttribute="centerX" secondItem="YCw-xK-Exe" secondAttribute="centerX" id="U1Q-9T-dVj"/>
+                <constraint firstItem="YCw-xK-Exe" firstAttribute="width" secondItem="BRT-sA-LfC" secondAttribute="width" multiplier="300:320" id="UDB-c0-HAv"/>
+                <constraint firstItem="YCw-xK-Exe" firstAttribute="centerX" secondItem="BRT-sA-LfC" secondAttribute="centerX" id="Z9y-z5-d1L"/>
+                <constraint firstAttribute="bottom" secondItem="vyI-o7-Eim" secondAttribute="bottom" constant="10" id="aAh-pO-WN7"/>
+                <constraint firstItem="TB8-wF-Jcf" firstAttribute="centerX" secondItem="6V5-pt-O1b" secondAttribute="centerX" id="cLq-nq-kOa"/>
+                <constraint firstItem="6V5-pt-O1b" firstAttribute="width" secondItem="BRT-sA-LfC" secondAttribute="width" multiplier="300/320" id="fYf-hs-9fh"/>
+                <constraint firstItem="6V5-pt-O1b" firstAttribute="centerX" secondItem="BRT-sA-LfC" secondAttribute="centerX" id="hqr-ZV-BdX"/>
+                <constraint firstItem="vyI-o7-Eim" firstAttribute="trailing" secondItem="YCw-xK-Exe" secondAttribute="trailing" id="lpN-o0-Aqe"/>
+                <constraint firstItem="kJX-KV-O2R" firstAttribute="width" secondItem="YCw-xK-Exe" secondAttribute="width" constant="8" id="sOl-Fl-IEj"/>
+                <constraint firstItem="6V5-pt-O1b" firstAttribute="top" secondItem="Xyh-vP-zQR" secondAttribute="bottom" constant="30" id="xve-5T-UXb"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="464" y="261"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="locate_boy" width="90" height="104"/>
+        <image name="locate_girl" width="88" height="122"/>
+        <image name="locate_logo" width="150" height="54"/>
+    </resources>
+</document>

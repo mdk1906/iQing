@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorite ListTBC-->
+        <scene sceneID="dLe-Ae-h9B">
+            <objects>
+                <viewController storyboardIdentifier="QWFavoriteListTBC" id="NPt-jK-uuL" customClass="QWFavoriteListTBC" customModule="Qingwen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Sie-bz-Riz"/>
+                        <viewControllerLayoutGuide type="bottom" id="DCo-kQ-06q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YYP-n7-2o4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="OFT-lE-bE0" customClass="QWTableView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="glz-RZ-kfi" customClass="QWBookListsTVCell" customModule="Qingwen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="glz-RZ-kfi" id="45L-aX-Tw5">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="NPt-jK-uuL" id="gvo-Jy-eTd"/>
+                                    <outlet property="delegate" destination="NPt-jK-uuL" id="ba3-2A-Kxa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OFT-lE-bE0" firstAttribute="top" secondItem="Sie-bz-Riz" secondAttribute="bottom" id="6i0-LR-3ng"/>
+                            <constraint firstItem="OFT-lE-bE0" firstAttribute="leading" secondItem="YYP-n7-2o4" secondAttribute="leading" id="NrZ-Ch-N5l"/>
+                            <constraint firstItem="DCo-kQ-06q" firstAttribute="top" secondItem="OFT-lE-bE0" secondAttribute="bottom" id="a94-5k-DAt"/>
+                            <constraint firstAttribute="trailing" secondItem="OFT-lE-bE0" secondAttribute="trailing" id="fzR-bl-bPn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="OFT-lE-bE0" id="44I-CW-AWw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEt-aR-Zmz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="316" y="108.39580209895054"/>
+        </scene>
+    </scenes>
+</document>

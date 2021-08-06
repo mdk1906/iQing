@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="m8J-dn-Clv" customClass="QWReadingBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="112"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e22-dx-qgu">
+                    <rect key="frame" x="0.0" y="65" width="375" height="50"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcl-9h-eqB">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oi1-ew-ra7">
+                                    <rect key="frame" x="0.0" y="0.0" width="94" height="50"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目录" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qQy-7t-Dty">
+                                            <rect key="frame" x="33" y="23" width="29" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Xv-cI-HyQ">
+                                            <rect key="frame" x="37.5" y="0.0" width="20" height="18"/>
+                                            <state key="normal" backgroundImage="目录">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="enlargeEdge">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onPressedChargeBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="00O-Xg-RrL"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="qQy-7t-Dty" firstAttribute="top" secondItem="1Xv-cI-HyQ" secondAttribute="bottom" constant="5" id="0Lz-pe-Gmc"/>
+                                        <constraint firstItem="qQy-7t-Dty" firstAttribute="centerX" secondItem="oi1-ew-ra7" secondAttribute="centerX" id="ByW-lW-LT2"/>
+                                        <constraint firstItem="1Xv-cI-HyQ" firstAttribute="top" secondItem="oi1-ew-ra7" secondAttribute="top" id="kLC-S6-u7P"/>
+                                        <constraint firstItem="1Xv-cI-HyQ" firstAttribute="centerX" secondItem="oi1-ew-ra7" secondAttribute="centerX" id="sc1-Yy-Nqf"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5a-0B-UJa">
+                                    <rect key="frame" x="94" y="0.0" width="93.5" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lsS-Dm-VGY">
+                                            <rect key="frame" x="37" y="0.0" width="20" height="22"/>
+                                            <state key="normal" image="reading_btn_light">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="enlargeEdge">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onpressedLightBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="N7H-kq-ADl"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="亮度" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OlP-gN-9gd">
+                                            <rect key="frame" x="32.5" y="27" width="29" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="lsS-Dm-VGY" firstAttribute="top" secondItem="S5a-0B-UJa" secondAttribute="top" id="52h-bM-0bd"/>
+                                        <constraint firstItem="lsS-Dm-VGY" firstAttribute="centerX" secondItem="S5a-0B-UJa" secondAttribute="centerX" id="ERN-w5-MCh"/>
+                                        <constraint firstItem="OlP-gN-9gd" firstAttribute="centerX" secondItem="S5a-0B-UJa" secondAttribute="centerX" id="OkV-kq-pjD"/>
+                                        <constraint firstItem="OlP-gN-9gd" firstAttribute="top" secondItem="lsS-Dm-VGY" secondAttribute="bottom" constant="5" id="Ut8-ey-53g"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="drg-sY-kbZ">
+                                    <rect key="frame" x="187.5" y="0.0" width="94" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgD-bZ-38E">
+                                            <rect key="frame" x="37.5" y="0.0" width="20" height="20"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="0.0"/>
+                                            <state key="normal" backgroundImage="reading_btn_charge"/>
+                                            <state key="selected" backgroundImage="reading_btn_night"/>
+                                            <connections>
+                                                <action selector="onPressedChangeModeBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="ZFI-im-hC0"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投石" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vi9-2o-Jhv">
+                                            <rect key="frame" x="33" y="25" width="29" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="PgD-bZ-38E" firstAttribute="top" secondItem="drg-sY-kbZ" secondAttribute="top" id="Gxe-vm-0Mu"/>
+                                        <constraint firstItem="Vi9-2o-Jhv" firstAttribute="centerX" secondItem="drg-sY-kbZ" secondAttribute="centerX" id="O8n-eg-l7r"/>
+                                        <constraint firstItem="Vi9-2o-Jhv" firstAttribute="top" secondItem="PgD-bZ-38E" secondAttribute="bottom" constant="5" id="nWy-Rb-uY7"/>
+                                        <constraint firstItem="PgD-bZ-38E" firstAttribute="centerX" secondItem="drg-sY-kbZ" secondAttribute="centerX" id="pCR-u4-2ek"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uw1-ms-grf">
+                                    <rect key="frame" x="281.5" y="0.0" width="93.5" height="50"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jve-CD-w8s">
+                                            <rect key="frame" x="36" y="0.0" width="20" height="20"/>
+                                            <state key="normal" backgroundImage="reading_btn_setting">
+                                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </state>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="number" keyPath="enlargeEdge">
+                                                    <real key="value" value="30"/>
+                                                </userDefinedRuntimeAttribute>
+                                            </userDefinedRuntimeAttributes>
+                                            <connections>
+                                                <action selector="onPressedSettingBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="lWN-bJ-6mj"/>
+                                            </connections>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9zC-7u-SKx">
+                                            <rect key="frame" x="31.5" y="25" width="29" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="jve-CD-w8s" firstAttribute="top" secondItem="uw1-ms-grf" secondAttribute="top" id="GeD-lJ-j5S"/>
+                                        <constraint firstItem="9zC-7u-SKx" firstAttribute="centerX" secondItem="uw1-ms-grf" secondAttribute="centerX" id="UxY-Yw-xUi"/>
+                                        <constraint firstItem="9zC-7u-SKx" firstAttribute="top" secondItem="jve-CD-w8s" secondAttribute="bottom" constant="5" id="kyg-lb-OFC"/>
+                                        <constraint firstItem="jve-CD-w8s" firstAttribute="centerX" secondItem="uw1-ms-grf" secondAttribute="centerX" id="zlB-d8-8uU"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="drg-sY-kbZ" firstAttribute="width" secondItem="uw1-ms-grf" secondAttribute="width" id="F6d-xK-hhy"/>
+                                <constraint firstItem="S5a-0B-UJa" firstAttribute="width" secondItem="drg-sY-kbZ" secondAttribute="width" id="bpS-fz-IEG"/>
+                                <constraint firstItem="oi1-ew-ra7" firstAttribute="width" secondItem="S5a-0B-UJa" secondAttribute="width" id="xm0-ts-W2D"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wcl-9h-eqB" firstAttribute="centerY" secondItem="e22-dx-qgu" secondAttribute="centerY" id="6CG-NE-6ce"/>
+                        <constraint firstAttribute="height" constant="50" id="Kvd-F5-4DH"/>
+                        <constraint firstItem="wcl-9h-eqB" firstAttribute="centerX" secondItem="e22-dx-qgu" secondAttribute="centerX" id="eM7-PN-E6V"/>
+                        <constraint firstItem="wcl-9h-eqB" firstAttribute="width" secondItem="e22-dx-qgu" secondAttribute="width" id="gPT-bf-jgQ"/>
+                        <constraint firstItem="wcl-9h-eqB" firstAttribute="height" secondItem="e22-dx-qgu" secondAttribute="height" id="zkU-kP-1PL"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9d-v8-X6L">
+                    <rect key="frame" x="26" y="15" width="46" height="30"/>
+                    <state key="normal" title="上一章">
+                        <color key="titleColor" red="0.95678943400000005" green="0.95690399410000004" blue="0.95675045250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedPreviousBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="Gdi-Ml-6vi"/>
+                    </connections>
+                </button>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" continuous="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iN8-AZ-Fhd">
+                    <rect key="frame" x="80" y="15" width="215" height="31"/>
+                    <color key="minimumTrackTintColor" red="0.95294117649999999" green="0.33333333329999998" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="maximumTrackTintColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="onValueChanged:" destination="m8J-dn-Clv" eventType="valueChanged" id="jSB-bF-fUM"/>
+                    </connections>
+                </slider>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkD-2V-voz">
+                    <rect key="frame" x="303" y="15" width="46" height="30"/>
+                    <state key="normal" title="下一章">
+                        <color key="titleColor" red="0.95678943400000005" green="0.95690399410000004" blue="0.95675045250000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="onPressedNextBtn:" destination="m8J-dn-Clv" eventType="touchUpInside" id="QzZ-oa-VpP"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.90000000000000002" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="iN8-AZ-Fhd" firstAttribute="centerY" secondItem="c9d-v8-X6L" secondAttribute="centerY" id="11a-SS-KWc"/>
+                <constraint firstItem="c9d-v8-X6L" firstAttribute="top" secondItem="m8J-dn-Clv" secondAttribute="top" constant="15" id="2AS-ZJ-i0k"/>
+                <constraint firstItem="e22-dx-qgu" firstAttribute="top" secondItem="iN8-AZ-Fhd" secondAttribute="bottom" constant="20" id="40J-3Z-93R"/>
+                <constraint firstItem="xkD-2V-voz" firstAttribute="leading" secondItem="iN8-AZ-Fhd" secondAttribute="trailing" constant="10" id="FEf-xI-Wq0"/>
+                <constraint firstItem="e22-dx-qgu" firstAttribute="leading" secondItem="m8J-dn-Clv" secondAttribute="leading" id="I4O-Jd-rwK"/>
+                <constraint firstAttribute="trailing" secondItem="e22-dx-qgu" secondAttribute="trailing" id="K3n-Dt-JJd"/>
+                <constraint firstItem="c9d-v8-X6L" firstAttribute="leading" secondItem="m8J-dn-Clv" secondAttribute="leading" constant="26" id="LfP-SW-zjN"/>
+                <constraint firstItem="xkD-2V-voz" firstAttribute="top" secondItem="c9d-v8-X6L" secondAttribute="top" id="dzc-9q-jZh"/>
+                <constraint firstItem="iN8-AZ-Fhd" firstAttribute="leading" secondItem="c9d-v8-X6L" secondAttribute="trailing" constant="10" id="yDX-WA-Zy3"/>
+                <constraint firstAttribute="trailing" secondItem="xkD-2V-voz" secondAttribute="trailing" constant="26" id="zHj-lc-0Gu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="modeBtn" destination="PgD-bZ-38E" id="GhC-Al-1zH"/>
+                <outlet property="modeLabel" destination="Vi9-2o-Jhv" id="Cqz-if-b8r"/>
+                <outlet property="modeView" destination="drg-sY-kbZ" id="dmm-O6-Fue"/>
+                <outlet property="slider" destination="iN8-AZ-Fhd" id="njT-Na-UFh"/>
+                <outletCollection property="gestureRecognizers" destination="d6o-So-8gV" appends="YES" id="rOM-bc-9pS"/>
+            </connections>
+            <point key="canvasLocation" x="403.5" y="395"/>
+        </view>
+        <tapGestureRecognizer id="d6o-So-8gV">
+            <connections>
+                <outlet property="delegate" destination="m8J-dn-Clv" id="BgH-kN-cLx"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="reading_btn_charge" width="20" height="20"/>
+        <image name="reading_btn_light" width="20" height="18"/>
+        <image name="reading_btn_night" width="20" height="20"/>
+        <image name="reading_btn_setting" width="20" height="20"/>
+        <image name="目录" width="20" height="17"/>
+    </resources>
+</document>

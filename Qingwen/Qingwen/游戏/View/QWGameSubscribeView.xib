@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QWGameSubscribeView">
+            <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MxJ-o9-4bJ">
+                    <rect key="frame" x="168" y="100.66666666666669" width="400" height="213.66666666666663"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alert_bg" translatesAutoresizingMaskIntoConstraints="NO" id="AmT-2G-vmp">
+                            <rect key="frame" x="-2.3333333333333428" y="-2.6666666666666714" width="406" height="219.66666666666669"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的重石余额：1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMg-cv-6Wd">
+                            <rect key="frame" x="8" y="8" width="132.66666666666669" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="本章是付费章节，购买后才能阅读" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XhL-4Q-4GV">
+                            <rect key="frame" x="93" y="54.999999999999986" width="214.66666666666669" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.65098039215686276" green="0.40784313725490196" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="订阅本章需付2重石" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NbF-3f-nVC">
+                            <rect key="frame" x="143.33333333333331" y="87.999999999999986" width="114" height="15.666666666666686"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IbE-VU-xeb">
+                            <rect key="frame" x="50" y="153.66666666666669" width="135" height="39.999999999999972"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="uiI-a6-0Zl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="充值中心" backgroundImage="btn_bg_7">
+                                <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedChargeCenter:" destination="iN0-l3-epB" eventType="touchUpInside" id="jG5-lg-vtK"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hh0-T1-54q">
+                            <rect key="frame" x="215" y="153.66666666666669" width="135" height="39.999999999999972"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title="确认购买" backgroundImage="btn_bg_2">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedBuyBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="Kcj-Cp-fiV"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHL-Dw-0rR">
+                            <rect key="frame" x="383" y="8" width="9" height="9"/>
+                            <state key="normal" backgroundImage="detail_subscriber_cancel"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="enlargeEdge">
+                                    <real key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onPressedRemove:" destination="iN0-l3-epB" eventType="touchUpInside" id="K71-vd-5KV"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Hh0-T1-54q" secondAttribute="trailing" constant="50" id="0xa-Fc-niA"/>
+                        <constraint firstItem="Hh0-T1-54q" firstAttribute="leading" secondItem="IbE-VU-xeb" secondAttribute="trailing" constant="30" id="1zz-Zs-Drb"/>
+                        <constraint firstItem="aHL-Dw-0rR" firstAttribute="top" secondItem="MxJ-o9-4bJ" secondAttribute="top" constant="8" id="4tO-rZ-B1r"/>
+                        <constraint firstItem="AmT-2G-vmp" firstAttribute="centerX" secondItem="MxJ-o9-4bJ" secondAttribute="centerX" id="7i9-xb-ReC"/>
+                        <constraint firstAttribute="bottom" secondItem="IbE-VU-xeb" secondAttribute="bottom" constant="20" id="9CB-61-6nK"/>
+                        <constraint firstItem="AmT-2G-vmp" firstAttribute="width" secondItem="MxJ-o9-4bJ" secondAttribute="width" constant="6" id="CMF-Mt-B2Q"/>
+                        <constraint firstItem="PMg-cv-6Wd" firstAttribute="top" secondItem="MxJ-o9-4bJ" secondAttribute="top" constant="8" id="EBw-hr-VVD"/>
+                        <constraint firstAttribute="trailing" secondItem="aHL-Dw-0rR" secondAttribute="trailing" constant="8" id="Fxb-r1-JM8"/>
+                        <constraint firstItem="NbF-3f-nVC" firstAttribute="top" secondItem="XhL-4Q-4GV" secondAttribute="bottom" constant="16" id="HSf-iG-D0j"/>
+                        <constraint firstItem="Hh0-T1-54q" firstAttribute="centerY" secondItem="IbE-VU-xeb" secondAttribute="centerY" id="Iss-Mk-QEk"/>
+                        <constraint firstItem="AmT-2G-vmp" firstAttribute="centerY" secondItem="MxJ-o9-4bJ" secondAttribute="centerY" id="J4O-xs-ewh"/>
+                        <constraint firstItem="AmT-2G-vmp" firstAttribute="height" secondItem="MxJ-o9-4bJ" secondAttribute="height" constant="6" id="KXW-we-arn"/>
+                        <constraint firstItem="XhL-4Q-4GV" firstAttribute="centerX" secondItem="MxJ-o9-4bJ" secondAttribute="centerX" id="LFv-HI-mis"/>
+                        <constraint firstItem="XhL-4Q-4GV" firstAttribute="top" secondItem="PMg-cv-6Wd" secondAttribute="bottom" constant="30" id="UwI-1k-CeV"/>
+                        <constraint firstItem="Hh0-T1-54q" firstAttribute="height" secondItem="IbE-VU-xeb" secondAttribute="height" id="Yll-G6-jQB"/>
+                        <constraint firstAttribute="width" constant="400" id="bAC-69-GAK"/>
+                        <constraint firstItem="IbE-VU-xeb" firstAttribute="width" secondItem="Hh0-T1-54q" secondAttribute="width" id="h7h-Y1-tRA"/>
+                        <constraint firstItem="NbF-3f-nVC" firstAttribute="centerX" secondItem="XhL-4Q-4GV" secondAttribute="centerX" id="hU4-PS-jQS"/>
+                        <constraint firstItem="IbE-VU-xeb" firstAttribute="top" secondItem="NbF-3f-nVC" secondAttribute="bottom" constant="50" id="hd5-g4-ZZO"/>
+                        <constraint firstItem="PMg-cv-6Wd" firstAttribute="leading" secondItem="MxJ-o9-4bJ" secondAttribute="leading" constant="8" id="jPf-fW-cJ2"/>
+                        <constraint firstItem="IbE-VU-xeb" firstAttribute="leading" secondItem="MxJ-o9-4bJ" secondAttribute="leading" constant="50" id="umn-Li-KHM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5040667808" colorSpace="custom" customColorSpace="sRGB"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="MxJ-o9-4bJ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wif-xH-Yfd"/>
+                <constraint firstItem="MxJ-o9-4bJ" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jmE-oD-Wh2"/>
+            </constraints>
+            <connections>
+                <outlet property="goldLabel" destination="PMg-cv-6Wd" id="pdk-9g-Nx4"/>
+                <outlet property="needPayLabel" destination="NbF-3f-nVC" id="ZfI-i4-Vhe"/>
+                <outletCollection property="gestureRecognizers" destination="61z-i9-MHB" appends="YES" id="VbJ-n7-DXh"/>
+            </connections>
+        </view>
+        <tapGestureRecognizer id="61z-i9-MHB">
+            <connections>
+                <action selector="onPressedRemove:" destination="iN0-l3-epB" id="a05-2E-YfH"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="alert_bg" width="13" height="13"/>
+        <image name="btn_bg_2" width="13" height="13"/>
+        <image name="btn_bg_7" width="13" height="13"/>
+        <image name="detail_subscriber_cancel" width="9" height="9"/>
+    </resources>
+</document>

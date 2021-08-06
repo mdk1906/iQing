@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "Qingwen_Images.xcassets_占位图_placeholder_category.imageset_placeholder_category_Before_2baa137897b036b5d6f7a75c224ff14d4a42ad3a.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Qingwen_Images.xcassets_占位图_placeholder_category.imageset_placeholder_category@2x_Before_2baa137897b036b5d6f7a75c224ff14d4a42ad3a.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "Qingwen_Images.xcassets_占位图_placeholder_category.imageset_placeholder_category@3x_Before_2baa137897b036b5d6f7a75c224ff14d4a42ad3a.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

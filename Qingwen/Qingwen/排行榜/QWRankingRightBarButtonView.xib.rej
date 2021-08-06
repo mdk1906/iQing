@@ -1,0 +1,38 @@
+diff a/Qingwen/排行榜/QWRankingRightBarButtonView.xib b/Qingwen/排行榜/QWRankingRightBarButtonView.xib	(rejected hunks)
+@@ -12,13 +12,13 @@
+             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+             <subviews>
+                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list_count_cover" translatesAutoresizingMaskIntoConstraints="NO" id="6hP-L6-YiJ">
+-                    <rect key="frame" x="41" y="5" width="36" height="34"/>
++                    <rect key="frame" x="0.0" y="5" width="36" height="34"/>
+                 </imageView>
+                 <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7qT-Tg-BlV">
+                     <rect key="frame" x="41" y="5" width="36" height="34"/>
+                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                     <state key="normal" title="周">
+-                        <color key="titleColor" red="0.95294117649999999" green="0.38823529410000002" blue="0.59607843140000005" alpha="1" colorSpace="calibratedRGB"/>
++                        <color key="titleColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                     </state>
+                     <connections>
+                         <action selector="clickWeek:" destination="rZX-Hg-5yX" eventType="touchUpInside" id="0js-3o-GBd"/>
+@@ -28,7 +28,10 @@
+                     <rect key="frame" x="0.0" y="5" width="36" height="34"/>
+                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                     <state key="normal" title="日">
+-                        <color key="titleColor" red="0.30196078430000001" green="0.30196078430000001" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
++                        <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
++                    </state>
++                    <state key="selected" title="日">
++                        <color key="titleColor" red="0.98431372549999996" green="0.51372549020000002" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                     </state>
+                     <connections>
+                         <action selector="clickDay:" destination="rZX-Hg-5yX" eventType="touchUpInside" id="avx-jK-e3j"/>
+@@ -38,7 +41,7 @@
+             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+             <constraints>
+                 <constraint firstAttribute="bottom" secondItem="7qT-Tg-BlV" secondAttribute="bottom" constant="5" id="5Ul-LC-cDo"/>
+-                <constraint firstItem="6hP-L6-YiJ" firstAttribute="leading" secondItem="rZX-Hg-5yX" secondAttribute="leading" constant="41" id="8Zg-Dg-IXX"/>
++                <constraint firstItem="6hP-L6-YiJ" firstAttribute="leading" secondItem="rZX-Hg-5yX" secondAttribute="leading" id="8Zg-Dg-IXX"/>
+                 <constraint firstItem="NH7-NW-QEU" firstAttribute="width" secondItem="7qT-Tg-BlV" secondAttribute="width" id="8ba-LX-8dM"/>
+                 <constraint firstAttribute="bottom" secondItem="NH7-NW-QEU" secondAttribute="bottom" constant="5" id="Cjs-NN-Vya"/>
+                 <constraint firstItem="6hP-L6-YiJ" firstAttribute="top" secondItem="rZX-Hg-5yX" secondAttribute="top" constant="5" id="Oq4-Gm-79e"/>

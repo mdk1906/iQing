@@ -1,0 +1,6 @@
+diff a/Qingwen/Qingwen-Bridging-Header.h b/Qingwen/Qingwen-Bridging-Header.h	(rejected hunks)
+@@ -66,3 +66,4 @@
+ #import "QWTracker.h"
+ #import <AlipaySDK/AlipaySDK.h>
+ #import "QWGameLogic.h"
++#import "NSString+url.h"

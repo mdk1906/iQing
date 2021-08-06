@@ -1,0 +1,26 @@
+diff a/Qingwen/排行榜/QWRankingLogic.swift b/Qingwen/排行榜/QWRankingLogic.swift	(rejected hunks)
+@@ -24,7 +24,7 @@ class QWRankingLogic: QWBaseLogic {
+     private var hotSaleUrl: String?
+     
+     func getRankUrl() {
+-        self.period = 1
++        self.period = 0
+         if let channel = channel {
+             switch channel {
+             case .Original, .Colleagues, .Girls:
+@@ -115,6 +115,7 @@ class QWRankingLogic: QWBaseLogic {
+         }
+         self.operationManager.requestWithParam(param)
+     }
++    
+     func getCollectionListWithCompleteBlock(completeBlock: QWCompletionBlock?) -> Void {
+         
+         var params = [String: AnyObject]()
+@@ -142,6 +143,7 @@ class QWRankingLogic: QWBaseLogic {
+         }
+         self.operationManager.requestWithParam(param)
+     }
++    
+     func getHotSaleListWithCompleteBlock(completeBlock: QWCompletionBlock?) -> Void {
+         
+         var params = [String: AnyObject]()

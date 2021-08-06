@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width">
+<title>广告样式</title>
+<style type="text/css">
+*{margin:0; padding:0;}
+body{ background:#343434; font-size:12px; }
+.aBtn{ position:fixed; left:0;top:0; width:%@; height:%@; text-decoration:none; overflow:hidden; box-sizing:border-box;}
+.wrap{ width: %@; padding:0 15px; margin: .05rem auto; background-color:#fff; height:.9rem; overflow: hidden;  }
+.bg_left{ position:absolute; top:0; left:0; height:%@; }
+.bg_right{ position:absolute; top:0; right:0; height:%@; }
+.infoBox{ margin-top:.03rem; }
+.infoIcon { width:%@; margin-right: %@; }
+.info{ display: inline-block; width:%@; vertical-align: top; }
+.infoTitle{ font-size:0.045rem; font-weight:bold; line-height:.065rem; height: .13rem; overflow: hidden; font-family: "Simsun"; color:#333;}
+.starBox{ display:inline-block; height:0.04rem; vertical-align: middle; line-height:0.04rem; overflow: hidden;}
+.star{ display:inline-block; width:0.04rem; height:0.04rem; margin-right:0.005rem; background-size: %@ %@; background-repeat: no-repeat;}
+.starAll{background-image: url("http://static.zplay.cn/wap/img/ad/star_all.png");}
+.starHalf{background-image: url("http://static.zplay.cn/wap/img/ad/star_half.png");}
+.number{ color:#666; display:inline-block; font-size:0.02rem; font-weight:bold; vertical-align: middle; font-family:'Arial'}
+.free { color:#ed9307;display:inline-block; font-family: "Simsun"; font-size:0.02rem;  font-weight:bold; vertical-align: middle;}
+.imgBox {margin:0.02rem 0; vertical-align: middle; }
+.imgBox img{ vertical-align: top; }
+.botBox{ height:.12rem; overflow: hidden; vertical-align: middle; }
+.infoText{height:.12rem; font-size: 0.04rem; line-height: 0.06rem; overflow: hidden; display: inline-block; width: %@; padding-right: %@; vertical-align: middle;}
+.clickbtn{ width: %@; vertical-align: middle;}
+</style>
+</head>
+<body>
+<img class="bg_left" src="http://static.zplay.cn/wap/img/ad/bg_left.jpg" />
+<img class="bg_right" src="http://static.zplay.cn/wap/img/ad/bg_right.jpg" />
+<div class="wrap">
+	<div class="infoBox">
+		<img src="%@" class="infoIcon" />
+		<div class="info">
+			<div class="infoTitle">%@</div>
+			<div class="infoStar">
+				<div class="starBox" id="starBox" number="%@"></div><span class="free">免费</span>
+			</div>
+		</div>
+	</div>
+	<div class="imgBox">
+		<img id="adImg" src="%@" width="%@"/>
+	</div>
+	<div class="botBox">
+		<div class="infoText">%@</div><img class="clickbtn" src="http://static.zplay.cn/wap/img/ad/check_btn_h.jpg" />
+	</div>
+</div>
+<a href="%@" class="aBtn"></a>
+<script type="text/javascript">
+window.resetFontSize = function(){
+	window.oWrap = document.querySelector('.wrap');
+	var dw = document.documentElement.clientWidth,
+		dh = document.documentElement.clientHeight,
+		wh = dw < dh ? dw : dh;
+	document.querySelector("html").style.fontSize = wh + 'px';
+};
+window.onload = function(){
+	resetFontSize();
+	// 星星
+	var starBox =  document.getElementById("starBox"),
+		number = starBox.getAttribute("number"),
+		star = "";
+	for(var i = 0 ; i < parseInt(number); i++){
+		star += '<i class="star starAll"></i>';
+	}
+	if(number.indexOf(".") > 0){
+		star += '<i class="star starHalf"></i>';
+	}
+	starBox.innerHTML = star;
+};
+</script>
+</body>
+</html>

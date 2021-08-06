@@ -1,0 +1,12 @@
+diff a/Qingwen/排行榜/QWTotalRankingVC.swift b/Qingwen/排行榜/QWTotalRankingVC.swift	(rejected hunks)
+@@ -131,8 +131,8 @@ extension QWTotalRankingVC {
+                 params["day_rank"] = "\(QWOperationParam.currentDomain())/game/tiprankall/"
+                 params["game"] = 1
+             }else {
+-                params["week_rank"] = "\(QWOperationParam.currentDomain())/book/week_rank/"
+-                params["day_rank"] = "\(QWOperationParam.currentDomain())/book/day_rank/"
++                params["week_rank"] = "\(QWOperationParam.currentDomain())/statistic/book/new_book_rank/"
++                params["day_rank"] = "\(QWOperationParam.currentDomain())/statistic/book/new_book_rank/"
+             }
+             params["title"] = "\(QWZoneHomeVC.QWZoneType.zoneTitle(self.zoneType))收藏榜"
+ 

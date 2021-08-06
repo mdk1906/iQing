@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="QWVIPSectionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bNd-P7-E50">
+                        <rect key="frame" x="10" y="4" width="355" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TaF-Qr-0JW">
+                                <rect key="frame" x="10" y="10" width="68" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="6qS-6F-Ys0"/>
+                                    <constraint firstAttribute="width" constant="68" id="9sn-w5-FXY"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mD7-YY-jRW">
+                                <rect key="frame" x="46" y="10" width="32" height="15"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="D0B-1J-332"/>
+                                    <constraint firstAttribute="height" constant="15" id="Klq-W0-o4R"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="被自己的游戏角色追到下一个游戏这件事" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVd-1K-w5o">
+                                <rect key="frame" x="88" y="9" width="257" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="K55-SX-cgy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.31372549020000001" green="0.31372549020000001" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者：二十月十日" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSZ-MK-ai9">
+                                <rect key="frame" x="88" y="38" width="257" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Fp1-17-vVI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="简介：游戏角色来到了现实世界。 是可爱的萝莉？还是可怕的杀人魔？ 游戏和真实的界限又置身于哪里呢里？ …… 嗯，别想那么多，本文只是个搞笑的欢乐日常而已。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yfh-uo-rjq">
+                                <rect key="frame" x="88" y="55" width="257" height="45"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yfh-uo-rjq" secondAttribute="trailing" constant="10" id="6P4-Dy-MBB"/>
+                            <constraint firstItem="TaF-Qr-0JW" firstAttribute="top" secondItem="bNd-P7-E50" secondAttribute="top" constant="10" id="BwZ-YK-v7c"/>
+                            <constraint firstItem="SSZ-MK-ai9" firstAttribute="leading" secondItem="TaF-Qr-0JW" secondAttribute="trailing" constant="10" id="PyC-GR-0MX"/>
+                            <constraint firstItem="TaF-Qr-0JW" firstAttribute="leading" secondItem="bNd-P7-E50" secondAttribute="leading" constant="10" id="RqM-c7-k6s"/>
+                            <constraint firstItem="mD7-YY-jRW" firstAttribute="top" secondItem="bNd-P7-E50" secondAttribute="top" constant="10" id="cFD-j2-dNS"/>
+                            <constraint firstItem="TVd-1K-w5o" firstAttribute="leading" secondItem="TaF-Qr-0JW" secondAttribute="trailing" constant="10" id="eZo-C3-oVh"/>
+                            <constraint firstItem="yfh-uo-rjq" firstAttribute="leading" secondItem="TaF-Qr-0JW" secondAttribute="trailing" constant="10" id="fQe-3t-8eV"/>
+                            <constraint firstItem="TVd-1K-w5o" firstAttribute="top" secondItem="bNd-P7-E50" secondAttribute="top" constant="9" id="ihg-Y3-59I"/>
+                            <constraint firstItem="mD7-YY-jRW" firstAttribute="leading" secondItem="bNd-P7-E50" secondAttribute="leading" constant="46" id="j5l-81-dCY"/>
+                            <constraint firstAttribute="trailing" secondItem="TVd-1K-w5o" secondAttribute="trailing" constant="10" id="l78-v6-kxr"/>
+                            <constraint firstAttribute="bottom" secondItem="yfh-uo-rjq" secondAttribute="bottom" constant="10" id="mFR-kp-Yk5"/>
+                            <constraint firstAttribute="trailing" secondItem="SSZ-MK-ai9" secondAttribute="trailing" constant="10" id="mkG-8I-eEN"/>
+                            <constraint firstAttribute="height" constant="110" id="oE0-Zu-FZb"/>
+                            <constraint firstItem="yfh-uo-rjq" firstAttribute="top" secondItem="SSZ-MK-ai9" secondAttribute="bottom" constant="5" id="qCN-Vo-Mxz"/>
+                            <constraint firstItem="SSZ-MK-ai9" firstAttribute="top" secondItem="TVd-1K-w5o" secondAttribute="bottom" constant="12" id="r4j-tc-c8T"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bNd-P7-E50" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8nd-KF-mdr"/>
+                    <constraint firstItem="bNd-P7-E50" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="MfT-8q-WdI"/>
+                    <constraint firstAttribute="trailing" secondItem="bNd-P7-E50" secondAttribute="trailing" constant="10" id="aMG-TO-ise"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backView" destination="bNd-P7-E50" id="X0l-gk-Bkn"/>
+                <outlet property="bookAuthorLab" destination="SSZ-MK-ai9" id="Xsk-Lq-Tev"/>
+                <outlet property="bookContontLab" destination="yfh-uo-rjq" id="ttR-vM-2N8"/>
+                <outlet property="bookImgView" destination="TaF-Qr-0JW" id="sks-cx-0Tl"/>
+                <outlet property="bookNameLab" destination="TVd-1K-w5o" id="DPO-i7-iD8"/>
+                <outlet property="vipImg" destination="mD7-YY-jRW" id="jUv-7a-Ag8"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

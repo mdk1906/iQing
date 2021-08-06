@@ -1,0 +1,26 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "40%OFF.pdf",
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 37,
+          "height" : 8
+        },
+        "cap-insets" : {
+          "bottom" : 5,
+          "top" : 2,
+          "right" : 3,
+          "left" : 6
+        }
+      }
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}

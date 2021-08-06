@@ -1,0 +1,19 @@
+diff a/Qingwen/详情/QWDetailHeadView.xib b/Qingwen/详情/QWDetailHeadView.xib	(rejected hunks)
+@@ -77,7 +77,7 @@
+                                 <constraint firstItem="81f-gg-JBl" firstAttribute="centerY" secondItem="j4V-5Q-i5y" secondAttribute="centerY" id="qJs-Jo-JAQ"/>
+                             </constraints>
+                         </view>
+-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-jf-nJw">
++                        <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4Q-jf-nJw">
+                             <rect key="frame" x="45" y="129" width="20" height="22"/>
+                             <state key="normal" image="detail_charge"/>
+                             <userDefinedRuntimeAttributes>
+@@ -89,7 +89,7 @@
+                                 <action selector="onPressedChargeBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="T5N-lU-uxi"/>
+                             </connections>
+                         </button>
+-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PK-N1-0J9">
++                        <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1PK-N1-0J9">
+                             <rect key="frame" x="255" y="129" width="20" height="22"/>
+                             <state key="normal" image="detail_charge_heavy"/>
+                             <userDefinedRuntimeAttributes>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tir-BL-gxz" customClass="QWListCVCell" customModule="Qingwen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="93" height="154"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="93" height="154"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="240" text="书名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="spD-cT-plK">
+                        <rect key="frame" x="0.0" y="129" width="93" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder157x157" translatesAutoresizingMaskIntoConstraints="NO" id="y8d-OY-BLn">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="124"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="y8d-OY-BLn" secondAttribute="height" multiplier="3/4" id="LGa-CW-9Qx"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia1-kN-vYb">
+                        <rect key="frame" x="48" y="0.0" width="45" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="vQw-VD-dYp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                        <state key="normal" title="  10万字" backgroundImage="list_count_bg">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="round_image" translatesAutoresizingMaskIntoConstraints="NO" id="tMx-mU-pqK">
+                        <rect key="frame" x="0.0" y="0.0" width="93" height="124"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="tMx-mU-pqK" firstAttribute="centerY" secondItem="y8d-OY-BLn" secondAttribute="centerY" id="0hb-Qz-M50"/>
+                <constraint firstItem="y8d-OY-BLn" firstAttribute="leading" secondItem="tir-BL-gxz" secondAttribute="leading" id="1ah-V3-Au7"/>
+                <constraint firstItem="tMx-mU-pqK" firstAttribute="height" secondItem="y8d-OY-BLn" secondAttribute="height" id="Are-hc-9qG"/>
+                <constraint firstItem="spD-cT-plK" firstAttribute="leading" secondItem="tir-BL-gxz" secondAttribute="leading" id="DN9-xE-hrh"/>
+                <constraint firstItem="ia1-kN-vYb" firstAttribute="top" secondItem="tir-BL-gxz" secondAttribute="top" id="DxX-aB-MJm"/>
+                <constraint firstItem="tMx-mU-pqK" firstAttribute="centerX" secondItem="y8d-OY-BLn" secondAttribute="centerX" id="Kz6-Ff-RZT"/>
+                <constraint firstAttribute="trailing" secondItem="ia1-kN-vYb" secondAttribute="trailing" id="NOy-Ya-T8i"/>
+                <constraint firstItem="tMx-mU-pqK" firstAttribute="width" secondItem="y8d-OY-BLn" secondAttribute="width" id="Q8T-Yw-7WI"/>
+                <constraint firstItem="y8d-OY-BLn" firstAttribute="top" secondItem="tir-BL-gxz" secondAttribute="top" id="Ymw-qJ-l5m"/>
+                <constraint firstItem="spD-cT-plK" firstAttribute="top" secondItem="y8d-OY-BLn" secondAttribute="bottom" constant="5" id="iKK-rm-7aS"/>
+                <constraint firstAttribute="trailing" secondItem="y8d-OY-BLn" secondAttribute="trailing" id="oo0-d5-olb"/>
+                <constraint firstAttribute="trailing" secondItem="spD-cT-plK" secondAttribute="trailing" id="vB2-52-Epm"/>
+            </constraints>
+            <connections>
+                <outlet property="countBtn" destination="ia1-kN-vYb" id="G8i-mK-fSr"/>
+                <outlet property="imageView" destination="y8d-OY-BLn" id="QAw-8g-szz"/>
+                <outlet property="titleLabel" destination="spD-cT-plK" id="6pb-R2-o6X"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="52"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="list_count_bg" width="45" height="15"/>
+        <image name="placeholder157x157" width="10" height="10"/>
+        <image name="round_image" width="7" height="7"/>
+    </resources>
+</document>

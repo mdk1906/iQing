@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fQh-87-S5N" customClass="QWContributionInputAccessoryView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qlg-4d-x9p">
+                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="b5s-aJ-GHg"/>
+                        <constraint firstAttribute="height" constant="44" id="g7d-lY-gBc"/>
+                    </constraints>
+                    <state key="normal" image="contribution_add_image"/>
+                    <connections>
+                        <action selector="onPressedAddImageBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="emK-bO-7W4"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4X3-Uj-f9s">
+                    <rect key="frame" x="44" y="0.0" width="232" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEB-mG-oIg">
+                            <rect key="frame" x="0.0" y="4" width="47" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="，">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedCharacterBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="vhE-nE-8Wp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0L-Nx-Mfb">
+                            <rect key="frame" x="46" y="4" width="47" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="。">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedCharacterBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="ttD-gW-PZg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XW-gn-tYZ">
+                            <rect key="frame" x="93" y="4" width="46" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="！">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedCharacterBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="F1s-8f-ZEt"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ee-q7-lEA">
+                            <rect key="frame" x="139" y="4" width="47" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="“">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedCharacterBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="jze-RB-oaG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fu-e2-VrU">
+                            <rect key="frame" x="185" y="4" width="47" height="36"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="”">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="onPressedCharacterBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="FB8-PC-xdF"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-Vf-OHq">
+                    <rect key="frame" x="276" y="0.0" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cit-xd-hX4"/>
+                        <constraint firstAttribute="width" constant="44" id="hM9-o0-LmA"/>
+                    </constraints>
+                    <state key="normal" image="contribution_end_edit"/>
+                    <connections>
+                        <action selector="onPressedEndEditBtn:" destination="fQh-87-S5N" eventType="touchUpInside" id="WBb-MQ-Xoe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="4X3-Uj-f9s" firstAttribute="leading" secondItem="qlg-4d-x9p" secondAttribute="trailing" id="Ezx-tF-f7Q"/>
+                <constraint firstItem="EWT-Vf-OHq" firstAttribute="centerY" secondItem="qlg-4d-x9p" secondAttribute="centerY" id="MAv-pj-wAn"/>
+                <constraint firstAttribute="trailing" secondItem="EWT-Vf-OHq" secondAttribute="trailing" id="Vr5-fh-Mti"/>
+                <constraint firstItem="EWT-Vf-OHq" firstAttribute="leading" secondItem="4X3-Uj-f9s" secondAttribute="trailing" id="adA-B4-r13"/>
+                <constraint firstItem="4X3-Uj-f9s" firstAttribute="height" secondItem="qlg-4d-x9p" secondAttribute="height" id="adf-SQ-9DI"/>
+                <constraint firstItem="qlg-4d-x9p" firstAttribute="centerY" secondItem="fQh-87-S5N" secondAttribute="centerY" id="pKK-KN-m1x"/>
+                <constraint firstItem="qlg-4d-x9p" firstAttribute="leading" secondItem="fQh-87-S5N" secondAttribute="leading" id="qfd-jN-Nbw"/>
+                <constraint firstItem="4X3-Uj-f9s" firstAttribute="centerY" secondItem="qlg-4d-x9p" secondAttribute="centerY" id="y86-xn-MBb"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="addImageBtn" destination="qlg-4d-x9p" id="0bV-1I-Gnc"/>
+                <outletCollection property="btns" destination="uEB-mG-oIg" id="KzH-DN-fuw"/>
+                <outletCollection property="btns" destination="P0L-Nx-Mfb" id="2Hi-uz-4Cd"/>
+                <outletCollection property="btns" destination="0XW-gn-tYZ" id="3Bo-1y-I5L"/>
+                <outletCollection property="btns" destination="8ee-q7-lEA" id="z0O-Vh-8AI"/>
+                <outletCollection property="btns" destination="8Fu-e2-VrU" id="LSp-4c-van"/>
+            </connections>
+            <point key="canvasLocation" x="651" y="350.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="contribution_add_image" width="24" height="24"/>
+        <image name="contribution_end_edit" width="24" height="24"/>
+    </resources>
+</document>

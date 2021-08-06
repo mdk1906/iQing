@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Pu7-F9-I4c">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--IntroVC-->
+        <scene sceneID="4GT-L1-QY1">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="Pu7-F9-I4c" customClass="QWIntroVC" customModule="Qingwen" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ggh-DA-2si"/>
+                        <viewControllerLayoutGuide type="bottom" id="Jh9-eR-LNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U5R-4G-QVe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bAW-5C-XUX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <animations/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="jxR-hw-WaJ">
+                                    <size key="itemSize" width="320" height="568"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="dPR-Sq-Lcj" customClass="QWIntroCVCell" customModule="Qingwen" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="intro_4" translatesAutoresizingMaskIntoConstraints="NO" id="hUX-6N-m5I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                                    <animations/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Vv-P4-2Cn">
+                                                    <rect key="frame" x="20" y="435" width="280" height="113"/>
+                                                    <animations/>
+                                                    <connections>
+                                                        <action selector="onPressedExitBtn:event:" destination="Pu7-F9-I4c" eventType="touchUpInside" id="vCn-ed-jTz"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <animations/>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstItem="4Vv-P4-2Cn" firstAttribute="height" secondItem="hUX-6N-m5I" secondAttribute="height" multiplier="0.2" id="6fC-8C-jaB"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Vv-P4-2Cn" secondAttribute="trailing" constant="20" id="BlI-a5-3bF"/>
+                                            <constraint firstItem="hUX-6N-m5I" firstAttribute="centerX" secondItem="dPR-Sq-Lcj" secondAttribute="centerX" id="BuY-uJ-6zt"/>
+                                            <constraint firstItem="hUX-6N-m5I" firstAttribute="height" secondItem="dPR-Sq-Lcj" secondAttribute="height" id="KvD-HR-59M"/>
+                                            <constraint firstItem="hUX-6N-m5I" firstAttribute="centerY" secondItem="dPR-Sq-Lcj" secondAttribute="centerY" id="QUr-hk-re5"/>
+                                            <constraint firstItem="hUX-6N-m5I" firstAttribute="width" secondItem="dPR-Sq-Lcj" secondAttribute="width" id="RTQ-Mh-Ia2"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Vv-P4-2Cn" secondAttribute="bottom" constant="20" id="VWG-07-fWr"/>
+                                            <constraint firstItem="4Vv-P4-2Cn" firstAttribute="leading" secondItem="dPR-Sq-Lcj" secondAttribute="leading" constant="20" id="Vqt-5E-Wnm"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="hUX-6N-m5I" id="h4R-ZK-X8x"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="Pu7-F9-I4c" id="5Xl-TU-WlM"/>
+                                    <outlet property="delegate" destination="Pu7-F9-I4c" id="WMb-Ch-ddW"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <animations/>
+                        <constraints>
+                            <constraint firstItem="bAW-5C-XUX" firstAttribute="centerY" secondItem="U5R-4G-QVe" secondAttribute="centerY" id="Oxa-7V-REN"/>
+                            <constraint firstItem="bAW-5C-XUX" firstAttribute="width" secondItem="U5R-4G-QVe" secondAttribute="width" id="VTu-Je-sZY"/>
+                            <constraint firstItem="bAW-5C-XUX" firstAttribute="centerX" secondItem="U5R-4G-QVe" secondAttribute="centerX" id="fdU-W1-1HC"/>
+                            <constraint firstItem="bAW-5C-XUX" firstAttribute="height" secondItem="U5R-4G-QVe" secondAttribute="height" id="wdM-WJ-zbn"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="bAW-5C-XUX" id="nt3-QF-gTf"/>
+                        <outlet property="layout" destination="jxR-hw-WaJ" id="2h9-kU-ytc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pDb-pY-3Fw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="516" y="318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="intro_4" width="540" height="960"/>
+    </resources>
+</document>

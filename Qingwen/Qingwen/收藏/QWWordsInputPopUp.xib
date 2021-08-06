@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QWWordsInputPopUp" customModule="Qingwen" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0cW-WJ-oU0">
+                    <rect key="frame" x="25" y="163.5" width="325" height="250"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请输入作品推荐词" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ppj-1H-Z1J">
+                            <rect key="frame" x="93" y="10" width="139" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64A-sq-2rh" customClass="QWTextView">
+                            <rect key="frame" x="10" y="46" width="305" height="150"/>
+                            <color key="backgroundColor" red="0.97295862440000003" green="0.95292085410000005" blue="0.95259314780000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="150" id="gZi-qv-ek7"/>
+                            </constraints>
+                            <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="0.68235294120000001" green="0.68235294120000001" blue="0.68235294120000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </textView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B2b-Ag-Epx">
+                            <rect key="frame" x="10" y="206" width="305" height="34"/>
+                            <color key="backgroundColor" red="0.98038524390000004" green="0.55730998519999997" blue="0.60711574550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="确认">
+                                <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickConfirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="QPV-pj-1oq"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subscriber_cancel" translatesAutoresizingMaskIntoConstraints="NO" id="Xod-NY-bX2">
+                            <rect key="frame" x="300" y="10" width="15" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="15" id="2Xe-TM-yJC"/>
+                                <constraint firstAttribute="width" secondItem="Xod-NY-bX2" secondAttribute="height" multiplier="1:1" id="Wgz-m0-Saw"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="64A-sq-2rh" firstAttribute="top" secondItem="Ppj-1H-Z1J" secondAttribute="bottom" constant="15" id="4KK-m2-3fL"/>
+                        <constraint firstItem="B2b-Ag-Epx" firstAttribute="leading" secondItem="0cW-WJ-oU0" secondAttribute="leading" constant="10" id="6Pc-qq-4Z9"/>
+                        <constraint firstItem="64A-sq-2rh" firstAttribute="leading" secondItem="0cW-WJ-oU0" secondAttribute="leading" constant="10" id="ADN-0W-XZj"/>
+                        <constraint firstItem="Ppj-1H-Z1J" firstAttribute="top" secondItem="0cW-WJ-oU0" secondAttribute="top" constant="10" id="MlN-k1-pgd"/>
+                        <constraint firstItem="Ppj-1H-Z1J" firstAttribute="centerX" secondItem="0cW-WJ-oU0" secondAttribute="centerX" id="OR5-mC-81e"/>
+                        <constraint firstAttribute="trailing" secondItem="64A-sq-2rh" secondAttribute="trailing" constant="10" id="XED-Yb-vZg"/>
+                        <constraint firstAttribute="height" constant="250" id="bUV-io-nar"/>
+                        <constraint firstAttribute="trailing" secondItem="B2b-Ag-Epx" secondAttribute="trailing" constant="10" id="ecp-cX-wED"/>
+                        <constraint firstItem="Xod-NY-bX2" firstAttribute="top" secondItem="0cW-WJ-oU0" secondAttribute="top" constant="10" id="qgE-xI-aJD"/>
+                        <constraint firstAttribute="bottom" secondItem="B2b-Ag-Epx" secondAttribute="bottom" constant="10" id="rJT-8I-0Iv"/>
+                        <constraint firstItem="B2b-Ag-Epx" firstAttribute="top" secondItem="64A-sq-2rh" secondAttribute="bottom" constant="10" id="sqi-ju-GKU"/>
+                        <constraint firstAttribute="trailing" secondItem="Xod-NY-bX2" secondAttribute="trailing" constant="10" id="zui-4H-D0s"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0cW-WJ-oU0" secondAttribute="trailing" constant="25" id="ByX-h4-6Hu"/>
+                <constraint firstItem="0cW-WJ-oU0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="cn9-NW-28f"/>
+                <constraint firstItem="0cW-WJ-oU0" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-45" id="pw3-DA-eOU"/>
+            </constraints>
+            <connections>
+                <outlet property="cancel" destination="Xod-NY-bX2" id="YgJ-7d-Fsd"/>
+                <outlet property="textInput" destination="64A-sq-2rh" id="B7f-Fe-NDm"/>
+            </connections>
+            <point key="canvasLocation" x="42.5" y="-328.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="subscriber_cancel" width="11" height="11"/>
+    </resources>
+</document>
